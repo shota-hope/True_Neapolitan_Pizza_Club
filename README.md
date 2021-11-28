@@ -46,3 +46,5 @@
 
 ## 画面遷移図
 https://www.figma.com/file/Snb588ncBlxNxz972EKvSH/%E7%9C%9F%E3%81%AE%E3%83%8A%E3%83%9D%E3%83%AA%E3%83%94%E3%83%83%E3%83%84%E3%82%A1%E9%83%A8?node-id=0%3A1
+## ER図
+https://i.gyazo.com/7a5ff676954bd2ec46260af6de29e950.png
