@@ -1,12 +1,14 @@
 .top-wrapper {
   background-image: image-url("top.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: calc(100vh - 134px);
   position: relative;
   background-position: center;
 
   .top-inner-text {
     position: absolute;
-    top: 20%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
