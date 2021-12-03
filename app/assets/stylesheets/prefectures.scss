@@ -6,18 +6,18 @@
   position: relative;
   background-position: center;
 
-  .top-inner-text {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    text-align: center;
-    font-size: 3rem;
-    color: white;
+  // .top-inner-text {
+  //   // position: absolute;
+  //   // top: 20%;
+  //   // left: 50%;
+  //   // transform: translate(-50%, -50%);
+  //   // width: 100%;
+  //   // text-align: center;
+  //   // font-size: 3rem;
+  //   color: white;
 
-    @media screen and (max-width: 767px) {
-      font-size: 2.0rem;
-    }
-  }
+  //   @media screen and (max-width: 767px) {
+  //     font-size: 2.0rem;
+  //   }
+  // }
 }
