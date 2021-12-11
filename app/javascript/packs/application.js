@@ -9,6 +9,8 @@ import * as ActiveStorage from "@rails/activestorage"
 import "bootstrap"
 import "bootstrap/scss/bootstrap.scss"
 
+import "prefecture/index"
+
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
