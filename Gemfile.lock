@@ -79,6 +79,10 @@ GEM
     crass (1.0.6)
     debug_inspector (1.1.0)
     diff-lcs (1.4.4)
+    dotenv (2.7.6)
+    dotenv-rails (2.7.6)
+      dotenv (= 2.7.6)
+      railties (>= 3.2)
     erubi (1.10.0)
     erubis (2.7.0)
     factory_bot (6.2.0)
@@ -269,6 +273,7 @@ DEPENDENCIES
   binding_of_caller
   bootsnap (>= 1.4.4)
   byebug
+  dotenv-rails
   factory_bot_rails
   jbuilder (~> 2.7)
   listen (~> 3.3)

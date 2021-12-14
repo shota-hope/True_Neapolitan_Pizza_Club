@@ -17,5 +17,5 @@
     <%= render 'shared/footer' %>
   </body>
    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPI337y5UlgANKBmSwBYWsu9clUP32lWc&callback=initMap&libraries=&v=weekly"async></script>
+      src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_MAP_API_KEY'] %>&callback=initMap&libraries=&v=weekly"async></script>
 </html>
