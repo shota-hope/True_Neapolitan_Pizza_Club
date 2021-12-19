@@ -11,7 +11,7 @@ Shop.seed(:id,
     member_since: '2008/05/28',
     pizza_maker: '', oven_used: '',
     url: 'http://estisola.com/cervo/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:2, name: 'ピッツェリア ダルセーニョ ドゥエ',
     tel_number: '011-213-1335',
@@ -24,7 +24,7 @@ Shop.seed(:id,
     member_since: '2013/02/17',
     pizza_maker: '', oven_used: '',
     url: 'https://ristorante-dalsegno.com/due/home_due.html',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:3, name: 'ピッツェリア ルッチ （PIZZERIA Lucci）',
     tel_number: '0126-31-6655',
@@ -37,7 +37,7 @@ Shop.seed(:id,
     member_since: '2017/05/24',
     pizza_maker: '冨田 浩司', oven_used: '',
     url: ' http://zebent.jp/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:4, name: 'ダルセーニョ（Dalsegno）',
     tel_number: '011-722-1808',
@@ -49,7 +49,7 @@ Shop.seed(:id,
     member_since: '2010/05/31',
     pizza_maker: '', oven_used: '',
     url: 'https://ristorante-dalsegno.com/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:5, name: 'ピッツァ製作所 zizi',
     tel_number: '0167-23-6069',
@@ -66,7 +66,7 @@ Shop.seed(:id,
     member_since: '2018/6/27',
     pizza_maker: '', oven_used: '',
     url: 'https://pizza-works-zizi.storeinfo.jp/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:6, name: 'ピッツェリア ピアーチェ （PIZZERIA Piace）',
     tel_number: '019-624-1234',
@@ -79,7 +79,7 @@ Shop.seed(:id,
     member_since: '2011/9/19',
     pizza_maker: '', oven_used: '',
     url: 'https://www.instagram.com/PIACE_NAPOLIPIZZA/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:7, name: 'ピッツェリア エ オステリア パドリーノ（Pizzeria e Osteria PADRINO）',
     tel_number: '022-290-1138',
@@ -91,7 +91,7 @@ Shop.seed(:id,
     member_since: '2011/9/19',
     pizza_maker: 'Mitsuhashi Toru', oven_used: '',
     url: 'https://pizzeria-padrino.com/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:8, name: 'ゼッキーニピッツァ バンカレッラ（Zecchini Pizza Bancarella）',
     tel_number: '018-838-5022',
@@ -104,7 +104,7 @@ Shop.seed(:id,
     member_since: '2021/10/18',
     pizza_maker: '大関 真吾', oven_used: '',
     url: 'https://www.facebook.com/zecchinipizzabancarella/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:9, name: '緑のイスキア (Verde ISCHIA)',
     tel_number: '0235-23-0303',
@@ -117,7 +117,7 @@ Shop.seed(:id,
     member_since: '2009/4/20',
     pizza_maker: '庄司 建人', oven_used: 'ジャンニ・アクント社',
     url: 'http://www.honamikaido.com/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:10, name: 'トラットリア エ ピッツェリア アミーチ（TRATTORIA E PIZZERIA AMICI）',
     tel_number: '029-852-5885',
@@ -131,7 +131,7 @@ Shop.seed(:id,
     member_since: '2008/5/28',
     pizza_maker: '', oven_used: '',
     url: 'https://amici-tsukuba.com/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:11, name: 'アロマ デル ソーレ',
     tel_number: '028-651-3066',
@@ -143,7 +143,7 @@ Shop.seed(:id,
     member_since: '2008/5/28',
     pizza_maker: '', oven_used: '',
     url: 'https://www.aroma-delsole.com/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:12, name: 'ピッツェリア ダ マキ（PIZZERIA DA MAKI）',
     tel_number: '0277-32-3658',
@@ -156,7 +156,7 @@ Shop.seed(:id,
     member_since: '2016/4/18',
     pizza_maker: '', oven_used: 'MAGO FOLNI社',
     url: 'https://damakikiryu.com/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:13, name: 'ピッツェリア オオサキ2 川口店',
     tel_number: '050-5596-4770',
@@ -168,7 +168,7 @@ Shop.seed(:id,
     member_since: '2019/5/20',
     pizza_maker: '', oven_used: '',
     url: 'https://www.pizzeria-ohsaki.com/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:14, name: 'ピッツェリア ジェコ(Pizzeria Geco)',
     tel_number: '042-973-0606',
@@ -180,7 +180,7 @@ Shop.seed(:id,
     member_since: '2015/4/13',
     pizza_maker: '', oven_used: '',
     url: 'http://geco-pizzeria.com/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:15, name: 'ピッツェリア オオサキ 本店',
     tel_number: '050-5590-5612',
@@ -192,7 +192,7 @@ Shop.seed(:id,
     member_since: '2014/2/17',
     pizza_maker: '', oven_used: '',
     url: 'https://www.pizzeria-ohsaki.com/top.html',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:16, name: 'ペルテ （Perte)',
     tel_number: '043-386-3702',
@@ -204,7 +204,7 @@ Shop.seed(:id,
     member_since: '2019/5/20',
     pizza_maker: '', oven_used: '',
     url: 'https://perte.shopinfo.jp/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:17, name: 'ピッタ ゼロゼロ （Pitta 00）',
     tel_number: '047-305-5649',
@@ -216,7 +216,7 @@ Shop.seed(:id,
     member_since: '2007/4/20',
     pizza_maker: '', oven_used: '',
     url: 'https://www.ikspiari.com/gourmet/shops/2358/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:18, name: 'ピッツェリア ティンタレッラ （Pizzeria Tintarella）',
     tel_number: '04-7164-0039',
@@ -228,7 +228,7 @@ Shop.seed(:id,
     member_since: '2017/5/24',
     pizza_maker: 'Hideo Endo', oven_used: '窯職人、ステファノフェラーラ氏製',
     url: 'http://www.tintarella.jp/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:19, name: 'トラットリア ピッツェリア アミーチ （Trattoria Pizzeria Amici）',
     tel_number: '050-5456-9844',
@@ -240,7 +240,7 @@ Shop.seed(:id,
     member_since: '2019/5/20',
     pizza_maker: '', oven_used: '',
     url: 'https://amici-jp.com/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:20, name: 'BUGANVILLE HIROO （ブガンヴィッレ）',
     tel_number: '080-1032-0341',
@@ -252,7 +252,7 @@ Shop.seed(:id,
     member_since: '2021/10/18',
     pizza_maker: '', oven_used: '',
     url: 'https://popolo-hiroba.com/buganvillehiroo/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:21, name: 'ZUZU（ズズ）',
     tel_number: '050-5570-5638',
@@ -265,7 +265,7 @@ Shop.seed(:id,
     member_since: '2016/4/18',
     pizza_maker: '', oven_used: '',
     url: 'https://www.facebook.com/anticapizzeriadazuzu',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:22, name: 'ラパーラ',
     tel_number: '042-339-7888',
@@ -277,7 +277,7 @@ Shop.seed(:id,
     member_since: '2004/06/11',
     pizza_maker: '', oven_used: '',
     url: 'http://www.lapala.com/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:23, name: 'ラ・ピッコラ・ターヴォラ （La Piccola Tavola）',
     tel_number: '03-5930-0008',
@@ -291,7 +291,7 @@ Shop.seed(:id,
     member_since: '1999/7/30',
     pizza_maker: '', oven_used: '',
     url: 'https://www.piccolatavola.jp/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:24, name: 'パルテノペ 恵比寿店 （Partenope）',
     tel_number: '080-8144-8832',
@@ -304,7 +304,7 @@ Shop.seed(:id,
     member_since: '2001/5/1',
     pizza_maker: '', oven_used: '',
     url: 'https://partenope.jp/ebisu/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:25, name: 'PIZZERIA CAPOLI （ピッツェリア カポリ）',
     tel_number: '050-5868-3543',
@@ -316,7 +316,7 @@ Shop.seed(:id,
     member_since: '2012/9/17',
     pizza_maker: '', oven_used: 'ステファノ・フェッラーラ氏製',
     url: 'https://tabelog.com/tokyo/A1304/A130401/13123990/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:26, name: 'ピッツェリア チーロ 東中野店 （PIZZERIA CIRO）',
     tel_number: '03-6426-0309',
@@ -328,7 +328,7 @@ Shop.seed(:id,
     member_since: '2021/10/18',
     pizza_maker: '', oven_used: '',
     url: 'https://tabelog.com/tokyo/A1319/A131901/13115030/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:27, name: 'ピッツェリア チーロ 桜新町店 （PIZZERIA CIRO）',
     tel_number: '050-5595-9006',
@@ -340,7 +340,7 @@ Shop.seed(:id,
     member_since: '2021/10/18',
     pizza_maker: '', oven_used: '',
     url: 'https://tabelog.com/tokyo/A1317/A131707/13174465/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:28, name: 'ピッツェリアGG 吉祥寺',
     tel_number: '0422-26-5024',
@@ -353,7 +353,7 @@ Shop.seed(:id,
     member_since: '2014/2/17',
     pizza_maker: '', oven_used: '',
     url: 'https://tabelog.com/tokyo/A1320/A132001/13047308/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:29, name: 'イル ルポーネ （il Lupone）',
     tel_number: '03-5722-6789',
@@ -365,7 +365,7 @@ Shop.seed(:id,
     member_since: '2006/4/12',
     pizza_maker: '', oven_used: '',
     url: 'http://www.il-lupone.jp/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:30, name: 'トラットリア ピッツェリア ラルテ （Trattoria e Pizzeria LARTE）',
     tel_number: '03-3424-3003',
@@ -378,7 +378,7 @@ Shop.seed(:id,
     member_since: '2011/9/19',
     pizza_maker: '', oven_used: '',
     url: 'http://www.larte.jp/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:31, name: 'ピッツェリア トニーノ（pizzeria TONINO）',
     tel_number: '03-3324-3090',
@@ -390,7 +390,7 @@ Shop.seed(:id,
     member_since: '2009/4/20',
     pizza_maker: '', oven_used: '',
     url: 'https://www.kaldi.co.jp/cafe/tonino_setagaya/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:32, name: 'リストランテ アルベロベッロ（Alberobello）',
     tel_number: '0463-91-0088',
@@ -402,7 +402,7 @@ Shop.seed(:id,
     member_since: '2004/10/18',
     pizza_maker: '', oven_used: '',
     url: 'https://popolo-hiroba.com/alberobello/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:33, name: 'ピッツェリア キアッキェローネ（PIZZERIA CHIACCHIERONE）',
     tel_number: '045-341-4183',
@@ -414,7 +414,7 @@ Shop.seed(:id,
     member_since: '2012/9/17',
     pizza_maker: '', oven_used: '',
     url: 'http://www.chiacchierone.jp/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:34, name: 'ピッツェリアGG 鎌倉（Pizzeria GG）',
     tel_number: '050-5456-3763',
@@ -426,7 +426,7 @@ Shop.seed(:id,
     member_since: '2013/2/17',
     pizza_maker: '', oven_used: '',
     url: 'https://www.facebook.com/PizzeriaGGKamakura',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:35, name: 'ラ・ポルタブルー（LA PORTA BLU）',
     tel_number: '0258-75-5860',
@@ -438,7 +438,7 @@ Shop.seed(:id,
     member_since: '2008/5/28',
     pizza_maker: 'Tomomitsu Sakai', oven_used: '',
     url: 'https://www.la-porta-blu.com/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:36, name: 'ロルノ（RORNO）',
     tel_number: '050-5597-5267',
@@ -450,7 +450,7 @@ Shop.seed(:id,
     member_since: '2021/10/18',
     pizza_maker: '', oven_used: '',
     url: 'https://tabelog.com/niigata/A1501/A150102/15019075/?fbclid=IwAR1LieiAp5dFU0SrauusIlG7Qzf_PhjO2zlEcV4quRpWrdewYaVLZSXBpEM',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:37, name: 'サリーナ （SALINA)',
     tel_number: '076-255-3546',
@@ -462,7 +462,7 @@ Shop.seed(:id,
     member_since: '2008/5/28',
     pizza_maker: '', oven_used: '',
     url: 'https://salina272.com/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:38, name: 'バードランド（BIRD LAND）',
     tel_number: '0776-82-5778',
@@ -474,7 +474,7 @@ Shop.seed(:id,
     member_since: '2002/2/14',
     pizza_maker: '', oven_used: '',
     url: 'https://www.birdland1989.com/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:39, name: 'ア フェネステッラ（‘A FENESTELLA）',
     tel_number: '0267-31-6770',
@@ -486,7 +486,7 @@ Shop.seed(:id,
     member_since: '2019/5/20',
     pizza_maker: '', oven_used: '',
     url: 'https://a-fenestella.com/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:40, name: 'Pizza Verde Matsumoto',
     tel_number: '050-5457-0623',
@@ -498,7 +498,7 @@ Shop.seed(:id,
     member_since: '2019/5/20',
     pizza_maker: '', oven_used: '',
     url: 'https://verde-matsumoto.jp/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:41, name: 'ピッツェリア・トラットリア・ラ・コッタ（Pizzeria Trattoria La Cotta）',
     tel_number: '026-227-0101',
@@ -510,7 +510,7 @@ Shop.seed(:id,
     member_since: '2015/4/13',
     pizza_maker: '', oven_used: '',
     url: 'https://www.facebook.com/Pizzeria-trattoria-la-cottaピッツェリア-トラットリア-ラ-コッタ-465357010219963/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:42, name: 'ピッツァ＆グリル Laporta（ラポルタ）',
     tel_number: '050-5597-2776',
@@ -522,7 +522,7 @@ Shop.seed(:id,
     member_since: '2021/10/18',
     pizza_maker: '', oven_used: '',
     url: 'https://www.instagram.com/la_porta5.6/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:43, name: 'ダ アチュ （DA ACHIU） ',
     tel_number: '050-5570-5423',
@@ -535,7 +535,7 @@ Shop.seed(:id,
     member_since: '2014/2/17',
     pizza_maker: '', oven_used: '',
     url: 'https://www.daachiu.com/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:44, name: 'NAPOLI UNO(ナポリウーノ)',
     tel_number: '054-260-5939',
@@ -547,7 +547,7 @@ Shop.seed(:id,
     member_since: '2018/6/27',
     pizza_maker: '', oven_used: '',
     url: 'https://www.facebook.com/napolishinshizuoka/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:45, name: "L'APE （ラ アペ）",
     tel_number: '054-367-7271',
@@ -559,7 +559,7 @@ Shop.seed(:id,
     member_since: '2010/5/31',
     pizza_maker: '', oven_used: '',
     url: 'https://pizzeria-lape.gorp.jp/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:46, name: 'ピッツェリアブラチェリア チェザリ （Pizzeria Braceria CESARI!!)',
     tel_number: '050-5589-5651',
@@ -571,7 +571,7 @@ Shop.seed(:id,
     member_since: '2006/4/12',
     pizza_maker: '牧島 昭成', oven_used: 'ステファノ フェラーラ氏製',
     url: 'https://www.cesari.jp/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:47, name: 'ピッツェリア パッソ アヴァンティ （Pizzeria Passo Avanti）',
     tel_number: '0569-62-3371',
@@ -583,7 +583,7 @@ Shop.seed(:id,
     member_since: '2017/5/24',
     pizza_maker: '', oven_used: '',
     url: 'https://pizzeria-passo-avanti.webnode.jp/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:48, name: 'Da Compagno（ダ コンパーニョ）',
     tel_number: '059-253-1803',
@@ -595,7 +595,7 @@ Shop.seed(:id,
     member_since: '2018/6/15',
     pizza_maker: '', oven_used: '',
     url: 'https://www.instagram.com/da.compagno/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:49, name: 'アンティカ ピッツェリア ラジネッロ （Antica Pizzeria L`ASINELLO） ',
     tel_number: '050-5890-4678',
@@ -607,7 +607,7 @@ Shop.seed(:id,
     member_since: '2021/10/18',
     pizza_maker: '', oven_used: '',
     url: 'https://www.instagram.com/antica_pizzeria_lasinello/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:50, name: 'エキ ポンテベッキオ ア オオサカ （ÉCHI PONTE VECCHIO A OSAKA）',
     tel_number: '06-6485-7745',
@@ -619,7 +619,7 @@ Shop.seed(:id,
     member_since: '2007/4/20',
     pizza_maker: '', oven_used: '',
     url: 'https://ponte-vecchio.co.jp/echi',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:51, name: 'イルソーレ ロッソ （IL SOLE ROSSO） ',
     tel_number: '050-5868-1913',
@@ -631,7 +631,7 @@ Shop.seed(:id,
     member_since: '2007/4/20',
     pizza_maker: '中西康之', oven_used: '',
     url: 'http://www.ilsole.jp/rosso/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:52, name: 'ピッツェリア　イルソーレ　天サン （PIZZERIA IL SOLE TEN-3） ',
     tel_number: '050-5872-3877',
@@ -643,7 +643,7 @@ Shop.seed(:id,
     member_since: '2013/2/17',
     pizza_maker: '中西康之', oven_used: '',
     url: 'http://www.ilsole.jp/ten3/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:53, name: '99 Pizza Napoletana Gourmet （ノヴァンタノーヴェ ピッツァ ナポレターナ グルメ）',
     tel_number: '072-228-1699',
@@ -655,7 +655,7 @@ Shop.seed(:id,
     member_since: '2016/4/18',
     pizza_maker: '', oven_used: '',
     url: 'https://www.facebook.com/99p.n.g.official/?ref=page_internal',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:54, name: 'Pizzeria Pancia Piena （ピッツェリア パンチャ ピエーナ）',
     tel_number: '072-754-5564',
@@ -668,7 +668,7 @@ Shop.seed(:id,
     member_since: '2009/4/20',
     pizza_maker: '', oven_used: '',
     url: 'https://tabelog.com/osaka/A2706/A270603/27013677/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:55, name: 'アレグロ 梅田店',
     tel_number: '050-5869-7277',
@@ -680,7 +680,7 @@ Shop.seed(:id,
     member_since: '2015/4/13',
     pizza_maker: '', oven_used: '',
     url: 'https://www.facebook.com/allegro.umeda/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:56, name: 'アズーリ （Pizzeria Azzurri）',
     tel_number: '078-241-6036',
@@ -692,7 +692,7 @@ Shop.seed(:id,
     member_since: '2009/4/20',
     pizza_maker: '', oven_used: '',
     url: 'https://www.instagram.com/pizzeria_azzurri/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:57, name: 'Pizzeria BEATRICE(ベアトリーチェ)',
     tel_number: '050-5593-0262',
@@ -704,7 +704,7 @@ Shop.seed(:id,
     member_since: '2016/4/18',
     pizza_maker: '', oven_used: '',
     url: 'https://www.pizzeria-beatrice.com/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:58, name: 'ピッツェリア エ トラットリア ダ・マサニエッロ （Pizzeria e trattoria Da Masaniello）',
     tel_number: '0797-71-5971',
@@ -716,7 +716,7 @@ Shop.seed(:id,
     member_since: '2012/9/17',
     pizza_maker: '', oven_used: '',
     url: 'http://masaniello-p.com/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:59, name: 'ピッツェリア ヒロ （PIZZERIA HIRO）',
     tel_number: '072-768-9615',
@@ -728,7 +728,7 @@ Shop.seed(:id,
     member_since: '2018/6/15',
     pizza_maker: '西本裕樹', oven_used: '',
     url: 'https://myfavoritefoooz.com/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:60, name: 'SAKURAGUMI （サクラグミ）',
     tel_number: '0791-42-3545',
@@ -740,7 +740,7 @@ Shop.seed(:id,
     member_since: '1997/9/15',
     pizza_maker: '西川明男', oven_used: '',
     url: 'https://www.vera-pizza-sakuragumi.co.jp/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:61, name: 'アレグロ 芦屋店',
     tel_number: '050-5570-5216',
@@ -752,7 +752,7 @@ Shop.seed(:id,
     member_since: '2015/4/13',
     pizza_maker: '', oven_used: '',
     url: 'https://restaurant-bank.jp/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:62, name: 'ICARO （イーカロ）',
     tel_number: '0742-93-9070',
@@ -764,7 +764,7 @@ Shop.seed(:id,
     member_since: '2019/5/20',
     pizza_maker: '中西 光', oven_used: '',
     url: 'https://pizzeria-icaro.jp/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:63, name: 'マガジーノ （Magazzino）',
     tel_number: '0745-79-8815',
@@ -776,7 +776,7 @@ Shop.seed(:id,
     member_since: '2008/5/28',
     pizza_maker: '野田泰仙', oven_used: 'GianniAcunto社製',
     url: 'https://magazzino.co.jp/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:64, name: 'イル リトロボ （il Ritrovo）',
     tel_number: '050-5456-4096',
@@ -788,7 +788,7 @@ Shop.seed(:id,
     member_since: '2016/4/18',
     pizza_maker: '', oven_used: '',
     url: 'https://www.facebook.com/IlRitrovoWakayama/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:65, name: 'Pizzeria UWOZA（ピッツェリアウヲザ）',
     tel_number: '0852-26-2237',
@@ -800,7 +800,7 @@ Shop.seed(:id,
     member_since: '2019/5/20',
     pizza_maker: '', oven_used: '',
     url: 'https://peraichi.com/landing_pages/view/pizzeriauwoza/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:66, name: 'イタリア食堂 MARIA（マリア）',
     tel_number: '050-5869-7057',
@@ -812,7 +812,7 @@ Shop.seed(:id,
     member_since: '2018/6/15',
     pizza_maker: '', oven_used: '',
     url: 'https://tabelog.com/okayama/A3302/A330201/33000135/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:67, name: 'ラ・ジータ （LA GITA）',
     tel_number: '0868-20-1171',
@@ -824,7 +824,7 @@ Shop.seed(:id,
     member_since: '2012/9/17',
     pizza_maker: '', oven_used: 'GIANNI ACUNT社製',
     url: 'https://www.pizzeria-la-gita.com/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:68, name: 'イタリア食堂 Mamma（マンマ）',
     tel_number: '050-5869-9682',
@@ -836,7 +836,7 @@ Shop.seed(:id,
     member_since: '2017/5/10',
     pizza_maker: '', oven_used: '',
     url: 'https://tabelog.com/okayama/A3301/A330101/33001630/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:69, name: 'アペティート （Trattoria Pizzeria Appetito）',
     tel_number: '086-226-5162',
@@ -848,7 +848,7 @@ Shop.seed(:id,
     member_since: '2007/4/20',
     pizza_maker: '', oven_used: '',
     url: 'http://www.appetito.jp/index.html',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:70, name: 'ピッツェリア フェリックス（Pizzeria Felix）',
     tel_number: '0848-29-9115',
@@ -860,7 +860,7 @@ Shop.seed(:id,
     member_since: '2019/5/20',
     pizza_maker: '', oven_used: 'GIANNI ACUNTO',
     url: 'https://pizzeriafelix.com/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:71, name: 'ピッツァリーヴァ （Pizza Riva）',
     tel_number: '082-293-4741',
@@ -872,7 +872,7 @@ Shop.seed(:id,
     member_since: '2004/6/11',
     pizza_maker: '', oven_used: '',
     url: 'https://tabelog.com/hiroshima/A3401/A340103/34001378/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:72, name: 'トラットリア ピッツェリア polipo',
     tel_number: '082-221-0331',
@@ -884,7 +884,7 @@ Shop.seed(:id,
     member_since: '2012/9/17',
     pizza_maker: '', oven_used: '',
     url: 'http://www.polipo-net.com/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:73, name: 'ピッツェリア ヴェントゥーノ（Pizzeria 21）',
     tel_number: '0833-48-5345',
@@ -896,7 +896,7 @@ Shop.seed(:id,
     member_since: '2018/6/15',
     pizza_maker: '', oven_used: '',
     url: 'https://www.facebook.com/pizzeria21/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:74, name: 'ピッツェリア・ダ・ハチ（PIZZERIA DA HACHI）',
     tel_number: '0827-24-7288',
@@ -908,7 +908,7 @@ Shop.seed(:id,
     member_since: '2019/5/20',
     pizza_maker: '', oven_used: '',
     url: 'https://ameblo.jp/8-pizza/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:75, name: 'ピッツェリアベルジョーコ（PIZZERIA Bel gioco）',
     tel_number: '0835-55-4126',
@@ -920,7 +920,7 @@ Shop.seed(:id,
     member_since: '2018/6/15',
     pizza_maker: '', oven_used: '',
     url: 'https://www.facebook.com/belgioco42/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:76, name: 'スガッチィー （TORATTORiA PiZZERiA SUGATTiii）',
     tel_number: '090-4333-1495',
@@ -932,7 +932,7 @@ Shop.seed(:id,
     member_since: '2009/4/20',
     pizza_maker: '菅 省士朗', oven_used: '',
     url: 'http://www.sugattiii.com/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:77, name: 'PIZZERIA CON CUORE ',
     tel_number: '0877-88-8288',
@@ -945,7 +945,7 @@ Shop.seed(:id,
     member_since: '2021/10/18',
     pizza_maker: '', oven_used: '',
     url: 'https://www.pizzeria-con-cuore.jp/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:78, name: 'ピッツェリア エイゴロ 伊予三島 （Pizzeria Eigoro Iyomishima）',
     tel_number: '050-5596-6919',
@@ -957,7 +957,7 @@ Shop.seed(:id,
     member_since: '2016/4/18',
     pizza_maker: '', oven_used: '',
     url: 'https://tabelog.com/ehime/A3802/A380204/38010745/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:79, name: 'Ｉl Ｓol Levante （イル ソル レヴァンテ） ',
     tel_number: '050-5594-1094',
@@ -969,7 +969,7 @@ Shop.seed(:id,
     member_since: '2008/5/28',
     pizza_maker: '', oven_used: '',
     url: 'https://ilsollevante.com/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:80, name: 'ピッツェリア・ダ・チールッツォ （Pizzeria da Ciruzzo）',
     tel_number: '092-805-1770',
@@ -981,7 +981,7 @@ Shop.seed(:id,
     member_since: '2012/9/17',
     pizza_maker: '', oven_used: '',
     url: 'https://www.facebook.com/PizzeriaDaCiruzzo',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:81, name: 'ピッツェリア・ダ・ガエターノ 薬院店 （Pizzeria Da Gaetano）',
     tel_number: '050-5869-3400',
@@ -993,7 +993,7 @@ Shop.seed(:id,
     member_since: '2011/9/19',
     pizza_maker: '', oven_used: '',
     url: 'http://www.gaetano.jp/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:82, name: 'ピッツェリア ダジーノ（Pizzeria Da Gino)',
     tel_number: '0952-30-8955',
@@ -1005,7 +1005,7 @@ Shop.seed(:id,
     member_since: '2017/5/24',
     pizza_maker: '', oven_used: '',
     url: 'https://pizzeria-da-gino.com/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:83, name: 'nodo （ノード）',
     tel_number: '070-8335-9098',
@@ -1017,7 +1017,7 @@ Shop.seed(:id,
     member_since: '2021/10/18',
     pizza_maker: '', oven_used: '',
     url: 'https://www.instagram.com/nodo.mochigi/?igshid=1jyl08xzw1xl5',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:84, name: 'PILAW ∴（ピロウ）',
     tel_number: '0985-29-4091',
@@ -1029,7 +1029,7 @@ Shop.seed(:id,
     member_since: '2011/9/19',
     pizza_maker: '', oven_used: '',
     url: 'https://savorjapan.com/0006082929/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:85, name: 'ピッツェリアオンダ（PIZZERIA ONDA）',
     tel_number: '098-943-2960',
@@ -1041,7 +1041,7 @@ Shop.seed(:id,
     member_since: '2014/9/24',
     pizza_maker: '', oven_used: 'ステファノフェラーラ社',
     url: 'https://pizzeriaonda.jp/',
-    latitude: '', longitude: '' }
+    latitude: '', longitude: '' },
 
   { id:86, name: 'ピッツェリア ラ ジネストラ（pizzeria La Ginestra）',
     tel_number: '',
