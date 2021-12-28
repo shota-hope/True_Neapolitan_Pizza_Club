@@ -2,9 +2,11 @@
 <html>
   <head>
     <title>TrueNeapolitanPizzaClub</title>
+    <%= Gon::Base.render_data %>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <%= include_gon %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
