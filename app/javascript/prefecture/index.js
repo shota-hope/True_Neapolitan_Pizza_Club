@@ -1,20 +1,4 @@
-// document.addEventListener('turbolinks:load', () => {
-//     // Initialize and add the map
-//   function initMap() {
-//     // The location of Uluru
-//     const uluru = { lat: -25.344, lng: 131.036 };
-//     // The map, centered at Uluru
-//     const map = new google.maps.Map(document.getElementById("map"), {
-//       zoom: 4,
-//       center: uluru,
-//     });
-//     // The marker, positioned at Uluru
-//     const marker = new google.maps.Marker({
-//       position: uluru,
-//       map: map,
-//     });
-//   }
-// })
+
 // Initialize and add the map
 // window.addEventListener('load', function () {
 //     initMap();
@@ -40,34 +24,23 @@ function initMap() {
     zoom: zoom_level_of_map,
     center: center_of_map
   });
-  // // The marker, positioned at Uluru
-//   const marker = new google.maps.Marker({
-//     position: center_of_map,
-//     map: map,
-//   });
-//   const infoWindow = new google.maps.InfoWindow({ // 吹き出しの追加
-//         content: gon.zoom_level_of_map // 吹き出しに表示する内容
-//   });
-//  marker.addListener('click', function() { // マーカーをクリックしたとき
-//      infoWindow.open(map, marker); // 吹き出しの表示
-//     });
 
  const shops_on_map = gon.shops_on_map;
   // 各shopデータを格納する箱 obj
- let obj = {};
+ let shopsData = {};
   // shopデータを格納するオブジェクト markerData
  let markerData = [];
 
   // markerDataにshopデータをループ処理で格納
  for (let i = 0; i < shops_on_map.length; i++) {
-   obj = {
+   shopsData = {
      id: shops_on_map[i]['id'],
      name: shops_on_map[i]['name'],
      address: shops_on_map[i]['address'],
      lat: shops_on_map[i]['latitude'],
      lng: shops_on_map[i]['longitude']
     };
-    markerData.push(obj);
+    markerData.push(shopsData);
   }
 
   // markerDataに入っているデータのピンを立てる。(googlemapに@shopsのピンを立てる)
