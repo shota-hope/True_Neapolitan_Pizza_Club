@@ -24,7 +24,7 @@ Shop.seed(:id,
     member_since: '2013/02/17',
     pizza_maker: '', oven_used: '',
     url: 'https://ristorante-dalsegno.com/due/home_due.html',
-    latitude: '43.0555511', longitude: '43.0555511' },
+    latitude: '43.0555511', longitude: '141.336569' },
 
   { id:3, name: 'ピッツェリア ルッチ （PIZZERIA Lucci）',
     tel_number: '0126-31-6655',

@@ -16,19 +16,14 @@
 //   }
 // })
 // Initialize and add the map
-// window.onload = function () {
-//   if (typeof gon !== 'undefined') {
+// window.addEventListener('load', function () {
 //     initMap();
-//   }
-// }
-window.addEventListener('load', function () {
+// })
+window.onload = function () {
+  if (typeof gon !== 'undefined') {
     initMap();
-})
-// window.onload = function () {
-//   if (typeof gon !== 'undefined') {
-//     initMap();
-//   }
-// }
+  }
+}
 
 const marker = [];
 const infoWindow = [];
@@ -45,7 +40,6 @@ function initMap() {
     zoom: zoom_level_of_map,
     center: center_of_map
   });
-  console.log(center_of_map)
   // // The marker, positioned at Uluru
 //   const marker = new google.maps.Marker({
 //     position: center_of_map,
@@ -59,12 +53,12 @@ function initMap() {
 //     });
 
  const shops_on_map = gon.shops_on_map;
-  // 各mountainデータを格納する箱 obj
+  // 各shopデータを格納する箱 obj
  let obj = {};
-  // mountainデータを格納する箱 markerData
+  // shopデータを格納するオブジェクト markerData
  let markerData = [];
-  // markerDataにmountainデータをループ処理で格納
 
+  // markerDataにshopデータをループ処理で格納
  for (let i = 0; i < shops_on_map.length; i++) {
    obj = {
      id: shops_on_map[i]['id'],
@@ -73,16 +67,16 @@ function initMap() {
      lat: shops_on_map[i]['latitude'],
      lng: shops_on_map[i]['longitude']
     };
-  markerData.push(obj)
+    markerData.push(obj);
   }
 
   // markerDataに入っているデータのピンを立てる。(googlemapに@shopsのピンを立てる)
   for (let i = 0; i < markerData.length; i++) {
     markerLatLng = new google.maps.LatLng({lat: markerData[i]['lat'], lng: markerData[i]['lng']}); // 緯度経度のデータ作成
-    marker[i] = new google.maps.Marker({ // マーカーの追加
-      position: markerLatLng, // マーカーを立てる位置を指定
-      map: map // マーカーを立てる地図を指定
-    });
+      marker[i] = new google.maps.Marker({ // マーカーの追加
+        position: markerLatLng, // マーカーを立てる位置を指定
+        map: map // マーカーを立てる地図を指定
+      });
 
     // マーカーに表示する内容を設定
     contentStr =
@@ -98,20 +92,18 @@ function initMap() {
     infoWindow[i] = new google.maps.InfoWindow({
       content: contentStr // 吹き出しに表示する内容をセット
     });
-
     markerEvent(i); // マーカーにクリックイベントを追加
   }
 }
 // マーカーを消すためのcurrentInfoWindow
-let currentInfoWindow;
-// マーカーにクリックイベントを追加
-function markerEvent(i) {
-  marker[i].addListener('click', function() { // マーカーをクリックしたとき
-  if (currentInfoWindow) { // 表示している吹き出しがあれば閉じる
-    currentInfoWindow.close();
+  let currentInfoWindow;
+  // マーカーにクリックイベントを追加
+  function markerEvent(i) {
+    marker[i].addListener('click', function() { // マーカーをクリックしたとき
+    if (currentInfoWindow) { // 表示している吹き出しがあれば閉じる
+      currentInfoWindow.close();
+    }
+    infoWindow[i].open(map, marker[i]); // 吹き出しの表示
+    currentInfoWindow = infoWindow[i]
+    });
   }
-  infoWindow[i].open(map, marker[i]); // 吹き出しの表示
-  currentInfoWindow = infoWindow[i]
-  });
-}
-
