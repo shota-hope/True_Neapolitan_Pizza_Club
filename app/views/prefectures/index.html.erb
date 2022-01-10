@@ -1,30 +1,89 @@
 <div class='top-wrapper'>
-  <div class='container px-4 px-lg-5 d-flex h-50 align-items-center justify-content-center'>
-    <div class="d-flex justify-content-center">
-      <div class="text-center">
-        <h2 class='text-white mx-auto mt-2'>「真のナポリピッツァ協会」認定店に</h1>
-        <h2 class='text-white mx-auto mb-5'>ナポリピッツァを食べに行こう</h2>
-        <button class='btn btn-primary'>現在地から探す</button>
+  <div class='container px-4 px-lg-5 d-flex h-50 align-items-center'>
+    <div class="d-flex">
+      <div class="top-inner-text">
+        <h1 class='text-white font-weight-bold mx-auto mt-2'>真のナポリピッツァ協会認定店に</h1>
+        <h1 class='text-white font-weight-bold mx-auto mt-3 mb-5'>ナポリピッツァを食べに行こう</h1>
       </div>
+      <button class='btn btn-primary'>現在地から探す</button>
     </div>
   </div>
 </div>
 
-<div class='jumbotron text-center mb-0'>
-  <h4 class='text-center font-weight-bold pt-2'>「真のナポリピッツァ部」は簡単に真のナポリピッツァ協会認定店を探せるサービスです。</h4>
-</div>
-
 <div id='map'></div>
 
-<div class='container'>
-  <div class='jumbotron text-center'>
-    <h4 class='text-center pb-4'>真のナポリピッツァ協会とは</h4>
-    <p class='pb-3'>真のナポリピッツァ協会(イタリア語：Associazione Verace Pizza Napoletana、通称AVPN)は営利団体としてナポリで1984年6月に創立されました。</p>
+<div class='jumbotron text-center mb-0 top-inner-text'>
+  <h2 class='text-center font-weight-bold pt-2'>「真のナポリピッツァ部」は<br>簡単に真のナポリピッツァ協会認定店を探せるサービスです。</h2>
+</div>
 
-    <h4 class='text-center pb-4'>真のナポリピッツァ協会の目的</h4>
-    <p class='pb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-    <h4 class='text-center pb-4'>ナポリピッツァってなに？？</h4>
-    <p class='pb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<div class='jumbotron top-inner-text text-center'>
+  <h3 class=' pb-5 font-weight-bold'>真のナポリピッツァ協会とは</h3>
+  <div class='row'>
+    <div class='col-12 col-md-3 col-lg-3'>
+      <%= image_tag 'napoli-Logo.png', class: 'mb-5', size: '200x200' %>
+    </div>
+    <div class='col-12 col-md-9 col-lg-9'>
+
+      <p class='text-justify pt-3'>イタリアのナポリで1984年に創立された非営利団体。<br>協会の目的として、ナポリに古くから伝わる職人の伝統技術の変化を防ぐことと、それを後世に伝えることです。現在では世界で400以上の支部があり、日本も2006年に支部を設立。ここでは日本国内でナポリピッツァが普及されるようにと、プロモーション活動が行なわれています。現在、日本で90店舗以上が加盟し、道化師がピッツァを焼いているロゴマークが飾られている店舗がそれに値します。</p>
+    </div>
   </div>
+  <h3 class='text-center my-3 pb-4 font-weight-bold'>ナポリピッツァとは</h3>
+
+  <div class='row'>
+    <div class='col-12 col-md-2 col-lg-2'>
+      <%= image_tag 'pizza-material.jpeg', class: 'mb-3 rounded-circle', size: '200x200' %>
+    </div>
+    <div class='col-12 col-md-4 col-lg-4 text-left'>
+      <p class='font-weight-bold mt-4'>1.生地に使用する材料は「小麦粉、酵母、塩、水」の4つのみ</p>
+      <p>これ以外のものを生地に混ぜ込むことは禁止とされ、混ぜ込まれたものは真のナポリピッツァではなくなります。</p>
+    </div>
+
+    <div class='col-12 col-md-2 col-lg-2 '>
+      <%= image_tag 'pizza-mix.jpeg', class: 'mb-3 rounded-circle', size: '200x200' %>
+    </div>
+    <div class='col-12 col-md-4 col-lg-4 text-left'>
+      <p class='font-weight-bold mt-4'>2.生地は手を使って延ばす</p>
+      <p>小麦粉で練ったシンプルな配合の生地は時間をかけて熟成、発酵させることで小麦粉の美味しさを最大限に引き出し、そのふくらみをつぶさないように手だけで優しく延ばしていきます。</p>
+    </div>
+
+    <div class='col-12 col-md-2 col-lg-2'>
+      <%= image_tag 'pizza-bake.jpeg', class: 'my-4 rounded-circle', size: '200x200' %>
+    </div>
+    <div class='col-12 col-md-4 col-lg-4 text-left'>
+      <p class='font-weight-bold mt-5'>3.窯の床面にて直焼きする</p>
+      <p>窯の内部温度を400度～450度にし、約1分少々で焼き上げます。ベストなポジションを見極め、表面がカリッとして内側がふんわりとした状態を作り出します。</p>
+    </div>
+
+    <div class='col-12 col-md-2 col-lg-2 '>
+      <%= image_tag 'makigama.jpg', class: 'my-4 rounded-circle', size: '200x200' %>
+    </div>
+    <div class='col-12 col-md-4 col-lg-4 text-left'>
+      <p class='font-weight-bold mt-5'>4.窯の燃料は、薪もしくは木くずとする</p>
+      <p>ピッツァを焼き上げる窯の燃料には、木材のみの使用が認められております。ピッツァ本来の香りを損ねないような木材や木くずを使用することがほとんどです。</p>
+    </div>
+
+    <div class='col-12 col-md-2 col-lg-2'>
+      <%= image_tag 'gakubuchi.jpg', class: 'my-4 rounded-circle', size: '200x200' %>
+    </div>
+    <div class='col-12 col-md-4 col-lg-4 text-left'>
+      <p class='font-weight-bold mt-5'>5.仕上がりはふっくらと、「額縁」がある</p>
+      <p>ピッツァの縁が膨れていることもナポリピッツァの特徴のひとつ。でこぼこした縁のところどころに焦げ目がついていて、見た目からも香ばしい美味しさが伝わります。</p>
+    </div>
+
+    <div class='col-12 col-md-2 col-lg-2 '>
+      <%= image_tag 'material.jpg', class: 'my-4 rounded-circle', size: '200x200' %>
+    </div>
+    <div class='col-12 col-md-4 col-lg-4 text-left'>
+      <p class='font-weight-bold mt-2'>6.上に乗せる材料にもこだわる</p>
+      <p>
+        <span class='font-weight-bold'>オイル</span>は高温でも酸化しにくく安定したエクストラ・バージン・オイルが多く使用されてます。<br>
+        <span class='font-weight-bold'>トマト</span>は「サンマルツァーノ種」でなくてはなりません。<br>
+        <span class='font-weight-bold'>チーズ</span>はモッツァレラ以外にパルミジャーノ、グラーナ・パダーノの4種類、もしくはペコリーノの粉末をふりかけることが認められています。<br>
+        <span class='font-weight-bold'>バジル</span>は協会の規約に「すべてのピッツァにバジリコの葉をのせるのがよい」とあり、ピッツァの種類に関係なく使用してよいことになっています。<br>
+      </p>
+    </div>
+
+  </div>
+</div>
+
 </div>
