@@ -1,7 +1,7 @@
 <div class='top-wrapper'>
   <div class='container px-4 px-lg-5 d-flex h-50 align-items-center'>
     <div class="d-flex">
-      <div class="top-inner-text">
+      <div class="top-inner-text top-text">
         <h1 class='text-white font-weight-bold mx-auto mt-2'>真のナポリピッツァ協会認定店に</h1>
         <h1 class='text-white font-weight-bold mx-auto mt-3 mb-5'>ナポリピッツァを食べに行こう</h1>
       </div>
@@ -12,69 +12,71 @@
 
 <div id='map'></div>
 
-<div class='jumbotron text-center mb-0 top-inner-text'>
-  <h2 class='text-center font-weight-bold pt-2'>「真のナポリピッツァ部」は<br>簡単に真のナポリピッツァ協会認定店を探せるサービスです。</h2>
+<div class='text-center font-weight-bold mb-0 top-text'>
+  <h2 class='pt-5 font-weight-bold'>「真のナポリピッツァ部」は</h2>
+  <h2 class='pt-2 pb-5 font-weight-bold'>簡単に真のナポリピッツァ協会認定店を探せるサービスです。</h2>
 </div>
 
-<div class='jumbotron top-inner-text text-center'>
-  <h3 class=' pb-5 font-weight-bold'>真のナポリピッツァ協会とは</h3>
-  <div class='row'>
-    <div class='col-12 col-md-3 col-lg-3'>
-      <%= image_tag 'napoli-Logo.png', class: 'mb-5', size: '200x200', alt: 'AVPN-LOGO' %>
-    </div>
-    <div class='col-12 col-md-9 col-lg-9'>
+<div class='container'>
+  <div class='top-text text-center'>
+    <h3 class=' pb-3 font-weight-bold'>真のナポリピッツァ協会とは</h3>
+  </div>
 
-      <p class='text-justify pt-3'>真のナポリピッツァ協会（イタリア語：Associazione Verace Pizza Napoletana、通称AVPN）はイタリアのナポリで1984年に創立された非営利団体。<br>協会の目的として、ナポリに古くから伝わる職人の伝統技術の変化を防ぐことと、それを後世に伝えることです。現在では世界で400以上の支部があり、日本も2006年に支部を設立。現在、日本で90店舗以上の加盟店があります。<br>協会の定める条件をすべてクリアし、正真正銘のナポリピッツァを提供していると認められたピッツェリアのみが、ナポリの伝統的な道化師「プルチネッラ」がピッツァを焼いているデザインのマークとロゴの使用を許可されます。また、加盟店には世界共通の通し番号が与えられます。</p>
+  <div class='row'>
+    <div class='col-12 col-md-6 col-lg-3'>
+      <%= image_tag 'napoli-Logo.png', class: 'mb-5 d-block mx-auto', size: '200x200', alt: 'AVPN-LOGO' %>
+    </div>
+    <div class='col-12 col-md-6 col-lg-9'>
+      <p class='text-justify pt-3'>真のナポリピッツァ協会（イタリア語: Associazione Verace Pizza Napoletana、通称AVPN）はイタリアのナポリで1984年に創立された非営利団体。<br>協会の目的として、ナポリに古くから伝わる職人の伝統技術の変化を防ぐことと、それを後世に伝えることです。現在では世界で400以上の支部があり、日本も2006年に支部を設立。現在、日本で90店舗以上の加盟店があります。<br>協会の定める条件をすべてクリアし、正真正銘のナポリピッツァを提供していると認められたピッツェリアのみが、ナポリの伝統的な道化師「プルチネッラ」がピッツァを焼いているデザインのマークとロゴの使用を許可されます。また、加盟店には世界共通の通し番号が与えられます。</p>
     </div>
   </div>
 
   <h3 class='text-center my-3 pb-4 font-weight-bold'>ナポリピッツァとは</h3>
-
   <div class='row'>
-    <div class='col-12 col-md-2 col-lg-2'>
-      <%= image_tag 'pizza-material.jpeg', class: 'mb-3 rounded-circle top-image', size: '200x200', alt: 'pizza material image' %>
+    <div class='col-12 col-md-6 col-lg-2'>
+      <%= image_tag 'pizza-material.jpeg', class: 'mb-3 rounded-circle top-image d-block mx-auto', size: '175x175', alt: 'pizza material image' %>
     </div>
-    <div class='col-12 col-md-4 col-lg-4 text-left'>
+    <div class='col-12 col-md-6 col-lg-4 text-left'>
       <p class='font-weight-bold mt-4'>1.生地に使用する材料は「小麦粉、酵母、塩、水」の4つのみ</p>
       <p>これ以外のものを生地に混ぜ込むことは禁止とされ、混ぜ込まれたものは真のナポリピッツァではなくなります。</p>
     </div>
 
-    <div class='col-12 col-md-2 col-lg-2 '>
-      <%= image_tag 'pizza-mix.jpeg', class: 'mb-3 rounded-circle top-image', size: '200x200', alt: 'pizza mix image' %>
+    <div class='col-12 col-md-6 col-lg-2 '>
+      <%= image_tag 'pizza-mix.jpeg', class: 'mb-3 rounded-circle top-image d-block mx-auto', size: '175x175', alt: 'pizza mix image' %>
     </div>
-    <div class='col-12 col-md-4 col-lg-4 text-left'>
+    <div class='col-12 col-md-6 col-lg-4 text-left'>
       <p class='font-weight-bold mt-4'>2.生地は手を使って延ばす</p>
       <p>小麦粉で練ったシンプルな配合の生地は時間をかけて熟成、発酵させることで小麦粉の美味しさを最大限に引き出し、そのふくらみをつぶさないように手だけで優しく延ばしていきます。</p>
     </div>
 
-    <div class='col-12 col-md-2 col-lg-2'>
-      <%= image_tag 'pizza-bake.jpeg', class: 'my-4 rounded-circle top-image', size: '200x200', alt: 'pizza bake image' %>
+    <div class='col-12 col-md-6 col-lg-2'>
+      <%= image_tag 'pizza-bake.jpeg', class: 'my-4 rounded-circle top-image d-block mx-auto', size: '175x175', alt: 'pizza bake image' %>
     </div>
-    <div class='col-12 col-md-4 col-lg-4 text-left'>
+    <div class='col-12 col-md-6 col-lg-4 text-left'>
       <p class='font-weight-bold mt-5'>3.窯の床面にて直焼きする</p>
       <p>窯の内部温度を400度～450度にし、約1分少々で焼き上げます。ベストなポジションを見極め、表面がカリッとして内側がふんわりとした状態を作り出します。</p>
     </div>
 
-    <div class='col-12 col-md-2 col-lg-2 '>
-      <%= image_tag 'makigama.jpg', class: 'my-4 rounded-circle top-image', size: '200x200', alt: 'pizza oven image' %>
+    <div class='col-12 col-md-6 col-lg-2 '>
+      <%= image_tag 'makigama.jpg', class: 'my-4 rounded-circle top-image d-block mx-auto', size: '175x175', alt: 'pizza oven image' %>
     </div>
-    <div class='col-12 col-md-4 col-lg-4 text-left'>
+    <div class='col-12 col-md-6 col-lg-4 text-left'>
       <p class='font-weight-bold mt-5'>4.窯の燃料は、薪もしくは木くずとする</p>
       <p>ピッツァを焼き上げる窯の燃料には、木材のみの使用が認められております。ピッツァ本来の香りを損ねないような木材や木くずを使用することがほとんどです。</p>
     </div>
 
-    <div class='col-12 col-md-2 col-lg-2'>
-      <%= image_tag 'gakubuchi.jpg', class: 'my-4 rounded-circle top-image', size: '200x200', alt: 'napoli pizza image' %>
+    <div class='col-12 col-md-6 col-lg-2'>
+      <%= image_tag 'gakubuchi.jpg', class: 'my-4 rounded-circle top-image d-block mx-auto', size: '175x175', alt: 'napoli pizza image' %>
     </div>
-    <div class='col-12 col-md-4 col-lg-4 text-left'>
+    <div class='col-12 col-md-6 col-lg-4 text-left'>
       <p class='font-weight-bold mt-5'>5.仕上がりはふっくらと、「額縁」がある</p>
       <p>ピッツァの縁が膨れていることもナポリピッツァの特徴のひとつ。でこぼこした縁のところどころに焦げ目がついていて、見た目からも香ばしい美味しさが伝わります。</p>
     </div>
 
-    <div class='col-12 col-md-2 col-lg-2 '>
-      <%= image_tag 'material.jpg', class: 'my-4 rounded-circle top-image', size: '200x200', alt: 'foodstuff image' %>
+    <div class='col-12 col-md-6 col-lg-2 '>
+      <%= image_tag 'material.jpg', class: 'my-4 rounded-circle top-image d-block mx-auto', size: '175x175', alt: 'foodstuff image' %>
     </div>
-    <div class='col-12 col-md-4 col-lg-4 text-left'>
+    <div class='col-12 col-md-6 col-lg-4 text-left'>
       <p class='font-weight-bold mt-2'>6.上に乗せる材料にもこだわる</p>
       <p>
         <span class='font-weight-bold'>オイル</span>は高温でも酸化しにくく安定したエクストラ・バージン・オイルが多く使用されてます。<br>
