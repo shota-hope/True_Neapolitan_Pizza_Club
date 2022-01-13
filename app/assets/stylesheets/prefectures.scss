@@ -21,10 +21,10 @@
     font-size: 3rem;
     color: white;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 540px) {
       font-size: 2.0rem;
       top: 30%;
-      text-align: center;
+      text-align: end;
     }
   }
 }
@@ -38,9 +38,9 @@ img.top-image {
 button {
   position: absolute;
   top: 90%;
-  left: 70%;
+  left: 65%;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 540px) {
       font-size: 0.7rem;
       position: absolute;
       top: 40%;
