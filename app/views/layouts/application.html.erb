@@ -14,9 +14,11 @@
   </head>
 
   <body id='body'>
-    <%= render 'shared/header' %>
-    <%= yield %>
-    <%= render 'shared/footer' %>
+    <div class="wrap">
+      <%= render 'shared/header' %>
+      <%= yield %>
+      <%= render 'shared/footer' %>
+    </div>
   </body>
    <script
       src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_MAP_API_KEY'] %>&callback=initMap&libraries=&v=weekly"async></script>
