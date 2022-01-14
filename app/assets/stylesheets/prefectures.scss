@@ -1,25 +1,51 @@
 .top-wrapper {
-  background-image: image-url("top.png");
+  background-image: image-url("top-img.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: calc(100vh - 134px);
+  height: calc(100vh - 74px);
   position: relative;
   background-position: center;
 
-  // .top-inner-text {
-  //   // position: absolute;
-  //   // top: 20%;
-  //   // left: 50%;
-  //   // transform: translate(-50%, -50%);
-  //   // width: 100%;
-  //   // text-align: center;
-  //   // font-size: 3rem;
-  //   color: white;
+   @media screen and (max-width: 767px) {
+      height: calc(78vh);
+    }
 
-  //   @media screen and (max-width: 767px) {
-  //     font-size: 2.0rem;
-  //   }
-  // }
+
+  .top-inner-text {
+    position: absolute;
+    top: 80%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: right;
+    font-size: 3rem;
+    color: white;
+
+    @media screen and (max-width: 540px) {
+      font-size: 2.0rem;
+      top: 30%;
+      text-align: end;
+    }
+  }
+}
+
+img.top-image {
+   @media screen and (max-width: 1194px) {
+     width: 160px;
+     height: 160px;
+    }
+}
+button {
+  position: absolute;
+  top: 90%;
+  left: 65%;
+
+  @media screen and (max-width: 540px) {
+      font-size: 0.7rem;
+      position: absolute;
+      top: 40%;
+      left: 30%;
+    }
 }
 
 /* Set the size of the div element that contains the map */

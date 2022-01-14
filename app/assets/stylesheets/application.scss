@@ -1,1 +1,37 @@
 @import 'prefectures';
+
+#body {
+  background-color: gainsboro;
+}
+
+// レスポンシブ対応
+@media (max-width: 768px) {
+  header {
+    .nav-menu {
+      font-size: 0.7rem;
+    }
+  }
+
+  .top-text {
+    h1 {
+      font-size: 1.4rem;
+    }
+    h2 {
+      font-size: 1.3rem;
+    }
+    h3 {
+      font-size: 1.3rem;
+    }
+    h4 {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+header {
+  background: none;
+}
+
+.wrap {
+  overflow: hidden;
+}
