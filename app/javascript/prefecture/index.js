@@ -68,15 +68,17 @@ function initMap() {
     markerEvent(i); // マーカーにクリックイベントを追加
   }
 }
+
 // マーカーを消すためのcurrentInfoWindow
-  let currentInfoWindow;
-  // マーカーにクリックイベントを追加
-  function markerEvent(i) {
-    marker[i].addListener('click', function() { // マーカーをクリックしたとき
-    if (currentInfoWindow) { // 表示している吹き出しがあれば閉じる
-      currentInfoWindow.close();
-    }
-    infoWindow[i].open(map, marker[i]); // 吹き出しの表示
-    currentInfoWindow = infoWindow[i]
-    });
+let currentInfoWindow;
+// マーカーにクリックイベントを追加
+function markerEvent(i) {
+  marker[i].addListener('click', function() { // マーカーをクリックしたとき
+  if (currentInfoWindow) { // 表示している吹き出しがあれば閉じる
+    currentInfoWindow.close();
   }
+  infoWindow[i].open(map, marker[i]); // 吹き出しの表示
+  currentInfoWindow = infoWindow[i]
+  });
+}
+window.initMap = initMap;
