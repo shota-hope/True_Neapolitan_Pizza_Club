@@ -3,11 +3,11 @@
 // window.addEventListener('load', function () {
 //     initMap();
 // })
-// window.onload = function () {
-//   if (typeof gon !== 'undefined') {
-//     initMap();
-//   }
-// }
+window.onload = function () {
+  if (typeof gon !== 'undefined') {
+    initMap();
+  }
+}
 
 const marker = [];
 const infoWindow = [];
