@@ -13,7 +13,7 @@
             <tbody>
             <% @shops.each do |shop| %>
               <tr>
-                <td scope="row"><%= link_to shop.name, shop_path(shop) %></td>
+                <td scope="row"><%= link_to shop.name, shop_path(shop), 'data-turbolinks': false %></td>
                 <td><%= shop.address %></td>
               </tr>
             <% end %>

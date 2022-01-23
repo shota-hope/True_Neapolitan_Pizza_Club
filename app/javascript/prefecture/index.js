@@ -1,21 +1,18 @@
-
 // Initialize and add the map
-// window.addEventListener('load', function () {
-//     initMap();
-// })
-window.onload = function () {
+
+window.addEventListener("load", () => {
   if (typeof gon !== 'undefined') {
     initMap();
-  }
-}
+  };
+});
 
 const marker = [];
 const infoWindow = [];
 
 function initMap() {
   const center_of_map = {
-    lat: gon.center_of_map_lat,
-    lng: gon.center_of_map_lng
+    lat: parseFloat(gon.center_of_map_lat),
+    lng: parseFloat(gon.center_of_map_lng)
   };
   const zoom_level_of_map = gon.zoom_level_of_map;
 
@@ -66,7 +63,7 @@ function initMap() {
       content: contentStr // 吹き出しに表示する内容をセット
     });
     markerEvent(i); // マーカーにクリックイベントを追加
-  }
+  };
 }
 
 // マーカーを消すためのcurrentInfoWindow
