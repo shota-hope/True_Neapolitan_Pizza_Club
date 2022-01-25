@@ -18,8 +18,15 @@
 </div>
 
 <div class='container'>
+  <section>
+    <div class='text-center'>
+      <%= link_to '店舗一覧を見る', shops_path, 'data-turbolinks': false, class: 'btn btn-dark mb-5' %>
+      <h3 class=' mb-4 ml-3'>店舗検索・都道府県別検索</h3>
+      <%= render 'shared/search_form', url: shops_path %>
+    </div>
+  </section>
   <div class='top-text text-center'>
-    <h3 class=' pb-3 font-weight-bold'>真のナポリピッツァ協会とは</h3>
+    <h3 class=' py-3 pt-5 font-weight-bold'>真のナポリピッツァ協会とは</h3>
   </div>
 
   <div class='row'>

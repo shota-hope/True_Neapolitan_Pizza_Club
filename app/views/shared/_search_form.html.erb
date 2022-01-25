@@ -1,11 +1,13 @@
 <%= search_form_for @q, url: url do |f| %>
-  <div class="col-5 d-inline-block mb-2">
-    <%= f.search_field :name_or_address_cont, method: :get, local: true, class: "form-control", placeholder: "キーワード" %>
-  </div>
-  <div class="col-4 d-inline-block">
-    <%= f.select :address_cont, options_from_collection_for_select(Prefecture.all, :name, :name), { include_blank: '都道府県を選択' }, { class: 'form-control' } %>
-  </div>
-  <div class="col-2 d-inline-block">
-    <%= f.submit '検索', class: "col-auto btn btn-primary"%>
+  <div class='input-group'>
+    <div class="col-4 d-inline-block mb-2 pl- pr-0">
+      <%= f.search_field :name_or_address_cont, method: :get, local: true, class: "form-control text-justify", placeholder: "キーワード" %>
+    </div>
+    <div class="col-5 d-inline-block pr-0">
+      <%= f.select :address_cont, options_from_collection_for_select(Prefecture.all, :name, :name), { include_blank: '都道府県を選択' }, { class: 'form-control text-justify' } %>
+    </div>
+    <div class="d-inline-block input-group-append">
+      <%= f.submit '検索', class: "col-auto btn btn-dark"%>
+    </div>
   </div>
 <% end %>
