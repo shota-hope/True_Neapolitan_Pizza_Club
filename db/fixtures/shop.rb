@@ -825,7 +825,7 @@ Shop.seed(:id,
 
   { id:68, name: 'イタリア食堂 Mamma（マンマ）',
     tel_number: '050-5869-9682',
-    address: 'c',
+    address: '岡山県岡山市北区田中121-105',
     access: '北長瀬駅から1,169m',
     open: '11:00～15:30（OS15:00） 17:00～22:00（OS21:30）',
     close: '不定休',

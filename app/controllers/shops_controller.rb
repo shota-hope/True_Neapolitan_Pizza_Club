@@ -2,7 +2,8 @@ class ShopsController < ApplicationController
    before_action :set_params_for_google_map, only: [:show]
 
   def index
-    @shops = Shop.all
+    @q = Shop.ransack(params[:q])
+    @shops = @q.result(distinct: true)
   end
 
   def show

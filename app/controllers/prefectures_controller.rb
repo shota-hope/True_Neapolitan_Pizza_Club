@@ -2,7 +2,8 @@ class PrefecturesController < ApplicationController
   before_action :set_center_of_jp, only: [:index]
 
   def index
-    @shops = Shop.all
+    @q = Shop.ransack(params[:q])
+    @shops = @q.result(distinct: true)
     gon.shops_on_map = @shops
   end
 
