@@ -1,6 +1,12 @@
 <div class="container pt-3">
   <div class="row">
-    <h2 class="float-left mb-5"><%= @shop.name %></h2>
+    <h2 class="float-left mb-4 mt-2"><%= @shop.name %></h2>
+      <!--twitterシェア-->
+      <%= link_to "https://twitter.com/share?url=#{request.url}/&text=#{@shop.name}%0aお気に入りの%20%23真のナポリピッツァ協会認定店%20を共有しよう。%0a&hashtags=真のナポリピッツァ部,真のナポリピッツァ協会 ", title: 'Twitter', target: '_blank', class: 'btn btn-outline-primary rounded-pill mt-2 mb-5' do %>
+        <i class="fab fa-twitter"></i>
+        <span>共有する</span>
+      <% end %>
+
       <div class='table-responsive justify-content-center'>
         <table class="table table-striped table-dark">
           <tbody>

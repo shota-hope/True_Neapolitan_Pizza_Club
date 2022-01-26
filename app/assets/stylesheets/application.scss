@@ -1,7 +1,11 @@
 @import 'prefectures';
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
 
 #body {
   background-color: #F3F3F3;
+  padding-top: 60px;
 }
 
 // レスポンシブ対応
@@ -29,9 +33,22 @@
 }
 
 header {
-  background: none;
+  position: fixed;
+  height: 60px;
+  width:100%;
+  z-index: 999;
+  /*最前面へ*/
+  top:0;
+  left:0;
+  background-color: rgba(52, 58, 64, 0.88);
 }
 
 .wrap {
   overflow: hidden;
+}
+
+a.header-font {
+   font-family: 'Noto Sans JP',
+   sans-serif;
+   font-weight: bold;
 }
