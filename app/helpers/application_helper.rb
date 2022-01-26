@@ -2,10 +2,10 @@ module ApplicationHelper
   def default_meta_tags
     {
       site: '真のナポリピッツァ部',
-      title: '真のナポリピッツァ部は「真のナポリピッツァ協会」認定店を簡単に探せるサービスです。',
+      title: '「真のナポリピッツァ協会」認定店を簡単に探せるサービスです。',
       reverse: true,
       separator: '|',
-      description: '真のナポリピッツァ部とは、「真のナポリピッツァ協会」認定店のみを簡単に探せるWebサービスです。お店を探してナポリピッツァを食べに行こう。',
+      description: '真のナポリピッツァ部は、「真のナポリピッツァ協会」認定店のみを簡単に探せるWebサービスです。お店を探してナポリピッツァを食べに行こう。',
       keywords: 'ナポリピッツァ',
       canonical: request.original_url,
       noindex: ! Rails.env.production?,
