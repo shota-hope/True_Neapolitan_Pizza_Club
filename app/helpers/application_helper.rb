@@ -15,8 +15,8 @@ module ApplicationHelper
       ],
       og: {
         site_name: '真のナポリピッツァ部',
-        title: '真のナポリピッツァ部は「真のナポリピッツァ協会」認定店を簡単に探せるサービスです。',
-        description: '真のナポリピッツァ部とは、「真のナポリピッツァ協会」認定店のみを簡単に探せるWebサービスです。お店を探してナポリピッツァを食べに行こう。',
+        title: '「真のナポリピッツァ協会」認定店を簡単に探せるサービスです。',
+        description: '真のナポリピッツァ部は、「真のナポリピッツァ協会」認定店のみを簡単に探せるWebサービスです。お店を探してナポリピッツァを食べに行こう。',
         type: 'website',
         url: request.original_url,
         image: image_url('biglogo.png'),
@@ -25,6 +25,7 @@ module ApplicationHelper
       twitter: {
         card: 'summary_large_image',
         site: '@ohno_hope3',
+        image: image_url('biglogo.png')
       }
     }
   end
