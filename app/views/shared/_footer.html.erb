@@ -1,15 +1,17 @@
 <footer id='footer' class="footer-bottom bg-dark">
-  <div class='container text-white text-center pt-3'>
+  <div class='container text-white text-center pt-2'>
     <div class='row'>
-      <%= link_to 'Twitter', '#', class: 'text-white p-2 col-sm' %>
-      <%= link_to 'フィードバック', '#', class: 'text-white p-2 col-sm' %>
+       <%= link_to "https://twitter.com/share?url=#{request.url}&text=%23真のナポリピッツァ部%20とは真のナポリピッツァ協会認定店を簡単に探せるサービスです。%0aお気に入りの%20%23真のナポリピッツァ協会認定店%20を共有しよう。%0a&hashtags=真のナポリピッツァ協会", title: 'Twitter', target: '_blank', class: 'text-white p-2 col-sm' do %>
+        <i class="fab fa-twitter"></i>
+      <% end %>
       <%= link_to 'プライバシーポリシー', '#', class: 'text-white p-2 col-sm' %>
       <%= link_to '利用規約', '#', class: 'text-white p-2 col-sm' %>
+      <%= link_to 'お問い合わせ', '#', class: 'text-white p-2 col-sm' %>
     </div>
   </div>
 
     <div class='row'>
-      <div class='text-white text-center col-12 pt-3'>
+      <div class='text-white text-center col-12 pt-2'>
         <p>Copyright © 2022. 真のナポリピッツァ部</p>
       </div>
 
