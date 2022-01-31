@@ -15,11 +15,11 @@
           </thead>
           <tbody>
           <% if @shops.present? %>
-            <% @shops.each do |shop| %>
-              <tr>
-                <td scope="row"><%= link_to shop.name, shop_path(shop), 'data-turbolinks': false %></td>
-                <td><%= shop.address %></td>
-              </tr>
+          <% @shops.each do |shop| %>
+            <tr>
+              <td scope="row"><%= link_to shop.name, shop_path(shop), 'data-turbolinks': false %></td>
+              <td><%= shop.address %></td>
+            </tr>
             <% end %>
           <% else %>
             <h3>検索した都道府県に認定店がありません</h3>

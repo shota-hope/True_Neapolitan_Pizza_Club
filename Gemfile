@@ -31,6 +31,8 @@ gem 'gon'
 gem 'ransack'
 gem 'font-awesome-sass'
 gem 'meta-tags'
+gem 'ransack'
+gem 'seed-fu'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -31,9 +31,9 @@
 }
 
 img.top-image {
-   @media screen and (max-width: 1194px) {
-     width: 160px;
-     height: 160px;
+  @media screen and (max-width: 1194px) {
+    width: 160px;
+    height: 160px;
     }
 }
 // button {
@@ -55,11 +55,11 @@ img.top-image {
   left: 65%;
 
   @media screen and (max-width: 540px) {
-    font-size: 0.7rem;
-    position: absolute;
-    top: 40%;
-    left: 30%;
-  }
+      font-size: 0.7rem;
+      position: absolute;
+      top: 40%;
+      left: 30%;
+    }
 }
 
 
