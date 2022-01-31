@@ -36,18 +36,32 @@ img.top-image {
      height: 160px;
     }
 }
-button {
+// button {
+//   position: absolute;
+//   top: 90%;
+//   left: 65%;
+
+//   @media screen and (max-width: 540px) {
+//       font-size: 0.7rem;
+//       position: absolute;
+//       top: 40%;
+//       left: 30%;
+//     }
+// }
+
+.top-button {
   position: absolute;
-  top: 90%;
+  top: 87%;
   left: 65%;
 
   @media screen and (max-width: 540px) {
-      font-size: 0.7rem;
-      position: absolute;
-      top: 40%;
-      left: 30%;
-    }
+    font-size: 0.7rem;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+  }
 }
+
 
 /* Set the size of the div element that contains the map */
 #map {
