@@ -32,7 +32,10 @@ gem 'ransack'
 gem 'font-awesome-sass'
 gem 'meta-tags'
 gem 'ransack'
+gem 'roboto'
 gem 'seed-fu'
+gem 'sitemap_generator'
+gem 'whenever'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

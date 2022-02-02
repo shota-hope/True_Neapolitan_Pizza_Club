@@ -40,3 +40,6 @@ yarn-debug.log*
 # TODO Comment out these rules if environment variables can be committed
 .env
 .env.*
+
+# Ignore sitemap file
+public/sitemap.xml.gz
