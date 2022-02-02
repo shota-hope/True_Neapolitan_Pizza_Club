@@ -1,3 +1,5 @@
-const { environment } = require('@rails/webpacker')
+const { environment } = require("@rails/webpacker");
+const eslint = require("./loaders/eslint");
 
-module.exports = environment
+environment.loaders.append("eslint", eslint);
+module.exports = environment;
