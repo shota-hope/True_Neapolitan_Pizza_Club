@@ -26,7 +26,6 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 gem 'dotenv-rails'
-gem 'seed-fu'
 gem 'gon'
 gem 'ransack'
 gem 'font-awesome-sass'
@@ -35,6 +34,7 @@ gem 'ransack'
 gem 'roboto'
 gem 'seed-fu'
 gem 'sitemap_generator'
+gem 'sorcery'
 gem 'whenever'
 
 group :development, :test do
