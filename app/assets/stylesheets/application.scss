@@ -49,17 +49,12 @@ header {
   }
 }
 
-.navbar-toggler .navbar-toggler-icon {
-  border-color: rgba(0, 0, 0, 0);
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
 @media screen and (max-width:768px) {
-  .collapse.show, {
+  .collapsing, .collapse.show {
     position: absolute;
     right: 20px;
     top: 55px;
-    padding:0 10px 5px 10px;
+    padding: 0 10px 5px 10px;
     border-radius: 10px;
     background-color: #343A3F;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -86,4 +81,7 @@ a.header-font {
 
 .form-height {
   padding-bottom: 120px;
+}
+.login-height {
+  padding-bottom: 250px;
 }
