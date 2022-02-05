@@ -7,8 +7,9 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       auto_login(@user)
-      redirect_to root_path
+      redirect_to root_path, success: '入部しました'
     else
+      flash.now[:danger] = '入部に失敗しました'
       render :new
     end
   end
