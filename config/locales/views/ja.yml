@@ -1,0 +1,20 @@
+ja:
+  defaults:
+    login: 'ログイン'
+    register: '登録'
+    logout: 'ログアウト'
+  users:
+    new:
+      title: '部員登録フォーム'
+      header_title: '新規登録'
+      to_login_page: 'ログインページへ'
+  user_sessions:
+    new:
+      title: 'ログイン'
+      to_register_page: '入部される方はこちら'
+  profiles:
+    show:
+      title: 'マイページ'
+  shops:
+    index:
+      title: '認定店一覧'
