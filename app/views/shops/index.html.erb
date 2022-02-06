@@ -1,6 +1,6 @@
 <div class="container pt-3">
   <div class="row">
-    <h2 class="mb-5">認定店一覧</h2>
+    <h2 class="mb-5"><%= (t 'shops.index.title') %></h2>
     <div>
       <%= render 'shared/search_form', url: shops_path %>
     </div>
@@ -9,8 +9,8 @@
         <table class="table table-striped table-dark table-hover">
           <thead>
             <tr>
-              <th scope="col">店舗名</th>
-              <th scope="col">住所</th>
+              <th scope="col"><%= (t 'shops.index.name') %></th>
+              <th scope="col"><%= (t 'shops.index.address') %></th>
             </tr>
           </thead>
           <tbody>
@@ -22,7 +22,7 @@
             </tr>
             <% end %>
           <% else %>
-            <h3>検索した都道府県に認定店がありません</h3>
+            <h3><%= (t 'shops.index.search_result') %></h3>
           <% end %>
           </tbody>
         </table>
