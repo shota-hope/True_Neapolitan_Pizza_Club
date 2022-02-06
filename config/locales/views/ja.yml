@@ -8,6 +8,10 @@ ja:
       title: '部員登録フォーム'
       header_title: '新規登録'
       to_login_page: 'ログインページへ'
+    show:
+    edit:
+      title: 'マイページ編集'
+      update: '更新'
   user_sessions:
     new:
       title: 'ログイン'
