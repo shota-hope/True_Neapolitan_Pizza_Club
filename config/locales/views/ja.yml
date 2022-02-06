@@ -1,0 +1,43 @@
+ja:
+  defaults:
+    login: 'ログイン'
+    register: '登録'
+    logout: 'ログアウト'
+  users:
+    new:
+      title: '部員登録フォーム'
+      header_title: '新規登録'
+      to_login_page: 'ログインページへ'
+  user_sessions:
+    new:
+      title: 'ログイン'
+      to_register_page: '入部される方はこちら'
+  profiles:
+    show:
+      title: 'マイページ'
+  shops:
+    index:
+      title: '認定店一覧'
+      name: '店舗名'
+      address: '住所'
+      search_result: '選択した都道府県に認定店がありません'
+    show:
+      name: '店舗名'
+      tel: 'TEL'
+      address: '住所'
+      access: 'アクセス'
+      open: '営業時間'
+      close: '定休日'
+      member_number: '認定番号'
+      member_since: '認定年月日'
+      pizza_maker: 'ピッツァイオーロ'
+      oven_used: '使用オーブン'
+      url: 'ホームページ'
+      share: '共有する'
+  static_pages:
+    privacy:
+      title: 'プライバシーポリシー'
+    terms:
+      title: '利用規約'
+    inquiry:
+      title: 'お問い合わせ'
