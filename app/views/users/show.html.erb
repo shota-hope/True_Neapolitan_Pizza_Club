@@ -1,2 +1,3 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<h1><%= @user.name %></h1>
+<p><%= @user.profile %></p>
+<%= link_to '編集', edit_user_path(current_user), class: 'btn btn-success' %>
