@@ -9,7 +9,17 @@
           <%= f.label :profile %>
           <%= f.text_area :profile, class: 'form-control', size: "70x5" %>
         </div>
-        <!--プロフィール画像を追加する項目-->
+        <div class="form-group">
+          <%= f.label :avatar %>
+          <%= f.file_field :avatar, onchange: 'previewImage()', class: 'form-control mb-3', accept: 'image/*' %>
+          <%= f.hidden_field :avatar_cache %>
+        </div>
+        <div class='mt-3 mb-3'>
+          <%= image_tag @user.avatar.url,
+                                id: 'preview',
+                              size: '150x150',
+                             class: 'rounded-circle' %>
+        </div>
         <%= f.submit (t 'users.edit.update'), class: 'btn btn-dark' %>
       <% end %>
     </div>
