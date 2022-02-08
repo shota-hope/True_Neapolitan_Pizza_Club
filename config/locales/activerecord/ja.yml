@@ -8,3 +8,5 @@ ja:
         password: 'パスワード'
         password_confirmation: 'パスワード確認'
         name: '名前'
+        profile: 'プロフィール'
+        avatar: '画像'

@@ -43,3 +43,5 @@ yarn-debug.log*
 
 # Ignore sitemap file
 public/sitemap.xml.gz
+
+/public/uploads

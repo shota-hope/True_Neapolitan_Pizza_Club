@@ -1,2 +1,20 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<div class='container'>
+  <div class='row'>
+    <div class='bg-white mt-3'>
+      <p class='font-weight-bold float-left mt-3 ml-3'>真のナポリピッツァ部員</p>
+      <% if current_user?(@user) %>
+        <%= link_to '編集', edit_user_path(current_user), class: 'btn btn-success float-right mt-3 mr-3' %>
+      <% end %>
+      </div>
+      <div class='col-12 col-sm-5 col-md-3 bg-white text-center'>
+        <%= image_tag @user.avatar.url, class: 'rounded-circle mt-2 ml-1',size: '130x130' %>
+        <p class='text-center font-weight-bold pt-2'><%= @user.name %></p>
+      </div>
+      <div class='col-12 col-sm-7 col-md-9 pt-3 bg-white'>
+        <p class ='text-jsutify text-left'><%= @user.profile %></p>
+      </div>
+    </div>
+
+   <!-- <h2 class='mt-4'>投稿一覧</h2> -->
+  </div>
+</div>

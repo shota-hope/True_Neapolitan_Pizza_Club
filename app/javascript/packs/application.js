@@ -8,8 +8,8 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "bootstrap"
 import "bootstrap/scss/bootstrap.scss"
-
 import "prefecture/index"
+import "../common"
 
 Rails.start()
 Turbolinks.start()
