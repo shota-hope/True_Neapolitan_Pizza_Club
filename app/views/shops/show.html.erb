@@ -2,62 +2,64 @@
   <div class="row">
     <h2 class="float-left mb-4 mt-2"><%= @shop.name %></h2>
       <!--twitterシェア-->
-      <%= link_to "https://twitter.com/share?url=#{request.url}/&text=#{@shop.name}%0aお気に入りの%20%23真のナポリピッツァ協会認定店%20を共有しよう。%0a&hashtags=真のナポリピッツァ部,真のナポリピッツァ協会 ", title: 'Twitter', target: '_blank', class: 'btn btn-outline-primary rounded-pill mt-2 mb-5' do %>
-        <i class="fab fa-twitter"></i>
-        <span><%= (t 'shops.show.share') %></span>
-      <% end %>
+    <%= link_to "https://twitter.com/share?url=#{request.url}/&text=#{@shop.name}%0aお気に入りの%20%23真のナポリピッツァ協会認定店%20を共有しよう。%0a&hashtags=真のナポリピッツァ部,真のナポリピッツァ協会 ", title: 'Twitter', target: '_blank', class: 'btn btn-outline-primary rounded-pill mt-2 mb-5' do %>
+      <i class="fab fa-twitter"></i>
+      <span><%= (t 'shops.show.share') %></span>
+    <% end %>
 
-      <div class='table-responsive justify-content-center'>
-        <table class="table table-striped table-dark">
-          <tbody>
-            <tr>
-              <th scope="row"><%= (t 'shops.show.name') %></th>
-              <td><%= @shop.name %></td>
-            </tr>
-            <tr>
-              <th><%= (t 'shops.show.tel') %></th>
-              <td><%= @shop.tel_number %></td>
-            </tr>
-            <tr>
-              <th class="text-nowrap"><%= (t 'shops.show.address') %></th>
-              <td><%= @shop.address %></td>
-            </tr>
-            <tr>
-              <th><%= (t 'shops.show.access') %></th>
-              <td><%= @shop.access %></td>
-            </tr>
-            <tr>
-              <th><%= (t 'shops.show.open') %></th>
-              <td><%= simple_format(h(@shop.open), {}, sanitize: false, wrapper_tag: "div") %></td>
-            </tr>
-            <tr>
-              <th><%= (t 'shops.show.close') %></th>
-              <td><%= @shop.close %></td>
-            </tr>
-            <tr>
-              <th><%= (t 'shops.show.member_number') %></th>
-              <td><%= @shop.member_number %></td>
-            </tr>
-            <tr>
-              <th><%= (t 'shops.show.member_since') %></th>
-              <td><%= @shop.member_since %></td>
-            </tr>
-            <tr>
-              <th><%= (t 'shops.show.pizza_maker') %></th>
-              <td><%= @shop.pizza_maker %></td>
-            </tr>
-            <tr>
-              <th><%= (t 'shops.show.oven_used') %></th>
-              <td><%= @shop.oven_used %></td>
-            </tr>
-            <tr>
-              <th ><%= (t 'shops.show.url') %></th>
-              <td><%= link_to @shop.url,@shop.url %></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+    <div class='table-responsive justify-content-center'>
+      <table class="table table-striped table-dark">
+        <tbody>
+          <tr>
+            <th scope="row"><%= (t 'shops.show.name') %></th>
+            <td><%= @shop.name %></td>
+          </tr>
+          <tr>
+            <th><%= (t 'shops.show.tel') %></th>
+            <td><%= @shop.tel_number %></td>
+          </tr>
+          <tr>
+            <th class="text-nowrap"><%= (t 'shops.show.address') %></th>
+            <td><%= @shop.address %></td>
+          </tr>
+          <tr>
+            <th><%= (t 'shops.show.access') %></th>
+            <td><%= @shop.access %></td>
+          </tr>
+          <tr>
+            <th><%= (t 'shops.show.open') %></th>
+            <td><%= simple_format(h(@shop.open), {}, sanitize: false, wrapper_tag: "div") %></td>
+          </tr>
+          <tr>
+            <th><%= (t 'shops.show.close') %></th>
+            <td><%= @shop.close %></td>
+          </tr>
+          <tr>
+            <th><%= (t 'shops.show.member_number') %></th>
+            <td><%= @shop.member_number %></td>
+          </tr>
+          <tr>
+            <th><%= (t 'shops.show.member_since') %></th>
+            <td><%= @shop.member_since %></td>
+          </tr>
+          <tr>
+            <th><%= (t 'shops.show.pizza_maker') %></th>
+            <td><%= @shop.pizza_maker %></td>
+          </tr>
+          <tr>
+            <th><%= (t 'shops.show.oven_used') %></th>
+            <td><%= @shop.oven_used %></td>
+          </tr>
+          <tr>
+            <th ><%= (t 'shops.show.url') %></th>
+            <td><%= link_to @shop.url,@shop.url %></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id='map' class='container mb-5 '></div>
+    <div>
+     <!-- <%= render 'posts/post_form' %> -->
+    </div>
   </div>
 </div>
-
-<div id='map' class='container mb-5 '></div>
