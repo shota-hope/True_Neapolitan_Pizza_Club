@@ -3,7 +3,7 @@ class ShopsController < ApplicationController
 
   def index
     @q = Shop.ransack(params[:q])
-    @shops = @q.result(distinct: true)
+    @shops = @q.result(distinct: true).order(id: :asc)
   end
 
   def show

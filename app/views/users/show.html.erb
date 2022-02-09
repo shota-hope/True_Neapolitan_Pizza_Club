@@ -6,11 +6,12 @@
         <%= link_to '編集', edit_user_path(current_user), class: 'btn btn-success float-right mt-3 mr-3' %>
       <% end %>
       </div>
-      <div class='col-12 col-sm-5 col-md-3 bg-white text-center'>
+      <div class='col-12 col-sm-5 col-md-3 mb-3 bg-white text-center'>
         <%= image_tag @user.avatar.url, class: 'rounded-circle mt-2 ml-1',size: '130x130' %>
         <p class='text-center font-weight-bold pt-2'><%= @user.name %></p>
       </div>
-      <div class='col-12 col-sm-7 col-md-9 pt-3 bg-white'>
+      <div class='col-12 col-sm-7 col-md-9 pt-3 mb-3 bg-white'>
+        <p class='font-weight-bold mb-0'>プロフィール</p><br>
         <p class ='text-jsutify text-left'><%= @user.profile %></p>
       </div>
     </div>
