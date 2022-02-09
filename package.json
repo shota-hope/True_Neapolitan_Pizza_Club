@@ -14,8 +14,6 @@
   },
   "version": "0.1.0",
   "devDependencies": {
-    "eslint": "^8.8.0",
-    "eslint-loader": "^4.0.2",
     "webpack-dev-server": "^3"
   }
 }
