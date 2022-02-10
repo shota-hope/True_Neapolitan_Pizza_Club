@@ -7,8 +7,12 @@
       <%= image_tag post.user.avatar_url, class: 'rounded-circle mt-3 ml-3', size: '100x100' %>
       <%= post.user.name %>
       <h2><%= post.title %></h2>
-      <h3><%= post.body %></h2>
+      <p><%= post.body %></p>
       <%= image_tag post.image_url, class: 'rounded', size: '200x150' %>
+      <div>
+        <%= link_to 'すべて表示', post_path(post), class: '' %>
+        <p><%= post.set_date %></p>
+      </div>
     </div>
   <% end %>
 </div>
