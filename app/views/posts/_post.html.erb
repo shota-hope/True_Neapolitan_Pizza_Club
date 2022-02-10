@@ -1,12 +1,10 @@
-<div class="border_bottom w-1oo">
-  <p class='font-weight-bold'>部員口コミ</p>
-</div>
 <div class="mb-3">
   <% @posts.each do |post| %>
-    <div class='bg-white rounded mb-3'>
-      <%= image_tag post.user.avatar_url, class: 'rounded-circle mt-3 ml-3', size: '100x100' %>
+    <div class='bg-white rounded mb-3 p-3'>
+      <p class='small'><%= link_to post.shop.name, shop_path(post.shop.id), class: 'text-dark' %></p>
+      <%= image_tag post.user.avatar_url, class: 'rounded-circle', size: '100x100' %>
       <%= post.user.name %>
-      <h2><%= post.title %></h2>
+      <p class='font-weight-bold'><%= post.title %></p>
       <p><%= post.body %></p>
       <%= image_tag post.image_url, class: 'rounded', size: '200x150' %>
       <div>

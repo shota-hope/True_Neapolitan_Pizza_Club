@@ -60,6 +60,9 @@
     <div id='map' class='container mb-5 '></div>
     <div class='w-100'>
       <%= link_to '投稿する', new_shop_post_path(@shop), class: 'btn btn-success float-right' %>
+      <div class="border_bottom w-1oo">
+        <p class='font-weight-bold'>部員口コミ</p>
+      </div>
       <div>
         <%= render 'posts/post' %>
       </div>
