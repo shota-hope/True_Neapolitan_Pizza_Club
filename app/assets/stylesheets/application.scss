@@ -83,9 +83,16 @@ a.header-font {
 .form-height {
   padding-bottom: 120px;
 }
+
 .login-height {
   padding-bottom: 250px;
 }
+
 .alert.alert-success {
   margin-bottom: 0;
+}
+
+.bg-white {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
 }

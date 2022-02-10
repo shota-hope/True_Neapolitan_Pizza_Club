@@ -58,8 +58,11 @@
       </table>
     </div>
     <div id='map' class='container mb-5 '></div>
-    <div>
-     <!-- <%= render 'posts/post_form' %> -->
+    <div class='w-100'>
+      <%= link_to '投稿する', new_shop_post_path(@shop), class: 'btn btn-success float-right' %>
+      <div>
+        <%= render 'posts/post' %>
+      </div>
     </div>
   </div>
 </div>

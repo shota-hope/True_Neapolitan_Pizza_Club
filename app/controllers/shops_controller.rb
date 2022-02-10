@@ -1,5 +1,5 @@
 class ShopsController < ApplicationController
-   before_action :set_params_for_google_map, only: [:show]
+  before_action :set_params_for_google_map, only: [:show]
 
   def index
     @q = Shop.ransack(params[:q])
@@ -8,6 +8,7 @@ class ShopsController < ApplicationController
 
   def show
     @shop = Shop.find(params[:id])
+    @posts = @shop.posts.order(created_at: :desc)
   end
 
   private
