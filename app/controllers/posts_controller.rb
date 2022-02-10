@@ -15,8 +15,9 @@ class PostsController < ApplicationController
     if @post.save
       redirect_to shop_path(@post.shop), success: '投稿しました'
     else
+      @shop = Shop.find(params[:shop_id])
       flash.now['danger'] = '投稿に失敗しました'
-      render :new
+      render :new # 更新するとルーティングエラーが出るバグあり
     end
   end
 
