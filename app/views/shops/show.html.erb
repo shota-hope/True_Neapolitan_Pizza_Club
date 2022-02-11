@@ -57,15 +57,17 @@
         </tbody>
       </table>
     </div>
-    <div id='map' class='container mb-5 '></div>
+    <div id='map' class='mb-5 '></div>
     <div class='w-100'>
       <%= link_to '投稿する', new_shop_post_path(@shop), class: 'btn btn-success float-right' %>
-      <div class="border_bottom w-1oo">
-        <p class='font-weight-bold'>部員口コミ</p>
-      </div>
+      <p class='font-weight-bold'>部員口コミ</p>
+    <% if @posts.blank? %>
+      <p>まだ口コミ投稿がありません</p>
+    <% else %>
       <div>
         <%= render 'posts/post' %>
       </div>
+    <% end %>
     </div>
   </div>
 </div>

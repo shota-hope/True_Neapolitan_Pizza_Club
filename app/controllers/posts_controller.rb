@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :require_login, only: [:create]
+  before_action :require_login, except: [:show]
 
   def new
     @shop = Shop.find(params[:shop_id])
