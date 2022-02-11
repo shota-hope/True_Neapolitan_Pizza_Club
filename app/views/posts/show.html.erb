@@ -11,11 +11,11 @@
         <p class='font-weight-bold mt-3'><%= @post.title %></p>
         <p><%= @post.body %></p>
         <% @post.image.each do |image| %>
-          <%= link_to image_tag image.url, class: 'rounded m-1', data-toggle: "modal", data-target: "#image-modal" , size: '250x200', 'data-turbolinks': false %>
+          <%= image_tag image.url, class: 'rounded m-1 img-fluid', data: { toggle: 'modal', target: '#image-modal' }, size: '250x200', 'data-turbolinks': false, style: "cursor:pointer" %>
           <div class="modal fade" id="image-modal">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-lg modal-middle">
               <div class="modal-body">
-                <%= link_to image_tag image.url, class: 'rounded m-1 aligncenter' %>
+                <%= image_tag image.url, class: 'img-fluid rounded m-1' %>
               </div>
             </div>
           </div>
