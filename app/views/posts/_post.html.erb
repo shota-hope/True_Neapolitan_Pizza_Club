@@ -6,7 +6,9 @@
       <%= post.user.name %>
       <p class='font-weight-bold'><%= post.title %></p>
       <p><%= post.body %></p>
-      <%= image_tag post.image_url, class: 'rounded', size: '200x150' %>
+      <% post.image.each do |image| %>
+        <%= image_tag image.url, class: 'rounded', size: '200x150' %>
+      <%end%>
       <div>
         <%= link_to 'すべて表示', post_path(post), class: '' %>
         <p><%= post.set_date %></p>
