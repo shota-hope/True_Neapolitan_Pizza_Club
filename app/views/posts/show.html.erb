@@ -2,7 +2,7 @@
   <div class="row">
     <div class="border-bottom w-100 mt-4 ml-4">
       <p class='font-weight-bold'>部員口コミ</p>
-      <p class='mt-3 font-weight-bold'><%= link_to @post.shop.name, shop_path(@post.shop.id) %></p>
+      <p class='mt-3 font-weight-bold'><%= link_to @post.shop.name, shop_path(@post.shop.id), 'data-turbolinks': false %></p>
     </div>
     <div class="mb-3 w-100">
       <div class='bg-white rounded mb-3 p-4'>
@@ -11,7 +11,14 @@
         <p class='font-weight-bold mt-3'><%= @post.title %></p>
         <p><%= @post.body %></p>
         <% @post.image.each do |image| %>
-          <%= image_tag image.url, class: 'rounded', size: '200x150' %>
+          <%= link_to image_tag image.url, class: 'rounded m-1', data-toggle: "modal", data-target: "#image-modal" , size: '250x200', 'data-turbolinks': false %>
+          <div class="modal fade" id="image-modal">
+            <div class="modal-dialog">
+              <div class="modal-body">
+                <%= link_to image_tag image.url, class: 'rounded m-1 aligncenter' %>
+              </div>
+            </div>
+          </div>
       <%end%>
         <p><%= @post.set_date %></p>
       </div>
