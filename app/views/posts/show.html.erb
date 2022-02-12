@@ -11,15 +11,15 @@
         <p class='font-weight-bold mt-3'><%= @post.title %></p>
         <p><%= @post.body %></p>
         <% @post.image.each do |image| %>
-          <%= image_tag image.url, class: 'rounded m-1 img-fluid', data: { toggle: 'modal', target: '#image-modal' }, size: '250x200', 'data-turbolinks': false, style: "cursor:pointer" %>
-          <div class="modal fade" id="image-modal">
+          <%= image_tag image.url, class: 'rounded m-1 img-fluid', data: { toggle: 'modal', target: "#image-modal#{@post.id += 1}" }, size: '230x180', 'data-turbolinks': false, style: "cursor:pointer" %>
+          <div class="modal fade" id="image-modal<%= @post.id%>">
             <div class="modal-dialog modal-lg modal-middle">
               <div class="modal-body">
                 <%= image_tag image.url, class: 'img-fluid rounded m-1' %>
               </div>
             </div>
           </div>
-      <%end%>
+        <%end%>
         <p><%= @post.set_date %></p>
       </div>
     </div>
