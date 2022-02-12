@@ -2,7 +2,7 @@
   <div class="row form-height">
     <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
       <p class='mt-3 font-weight-bold'>お店に口コミを投稿</p>
-      <p class='mt-3 font-weight-bold'><%= @shop.name %></p>
+      <p class='mt-3 font-weight-bold'><%= link_to @shop.name, shop_path(@shop),'data-turbolinks': false %></p>
       <%= form_with model: @post, url: [@shop, @post], local: true do |f| %>
       <%= render 'shared/error_messages', object: f.object %>
         <div class="form-group">
@@ -19,7 +19,7 @@
           <%= f.hidden_field :image_cache %>
         </div>
         <%= f.hidden_field :shop_id , value: @shop.id %>
-        <%= f.submit class: 'btn btn-primary' %>
+        <%= f.submit (t 'post.new.post'), class: 'mt-3 btn btn-warning' %>
       <% end %>
     </div>
   </div>

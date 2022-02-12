@@ -10,3 +10,8 @@ ja:
         name: '名前'
         profile: 'プロフィール'
         avatar: '画像'
+      post:
+        title: 'タイトル'
+        body: '本文'
+        image: '画像'
+  
