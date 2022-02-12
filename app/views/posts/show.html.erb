@@ -18,11 +18,11 @@
           <p class='text-dark'><%= @post.user.name %></p>
         </div>
         <% end %>
-        <p class='font-weight-bold mt-4'><%= @post.title %></p>
+        <p class='font-weight-bold mt-4 ml-3'><%= @post.title %></p>
         <p class='ml-3'><%= @post.body %></p>
         <% @post.image.each do |image| %>
-          <%= image_tag image.url, class: 'rounded m-1 img-fluid', data: { toggle: 'modal', target: "#image-modal#{@post.id += 1}" }, size: '230x180', 'data-turbolinks': false, style: "cursor:pointer" %>
-          <div class="modal fade" id="image-modal<%= @post.id%>">
+          <%= image_tag image.url, class: 'rounded m-1 img-fluid', data: { toggle: 'modal', target: "#image-modal#{@post.shop_id += 1}" }, size: '230x180', 'data-turbolinks': false, style: "cursor:pointer" %>
+          <div class="modal fade" id="image-modal<%= @post.shop_id%>">
             <div class="modal-dialog modal-lg modal-middle">
               <div class="modal-body">
                 <%= image_tag image.url, class: 'img-fluid rounded m-1' %>
@@ -31,6 +31,11 @@
           </div>
         <%end%>
         <p><%= @post.set_date %></p>
+        <% if current_user?(@user) %>
+          <%= link_to post_path(@post), method: :delete, data: { confirm: '削除しますか？' } do %>
+            <%= icon 'fas', 'trash' %>
+          <% end %>
+        <% end %>
       </div>
     </div>
   </div>
