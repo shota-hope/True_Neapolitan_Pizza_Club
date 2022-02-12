@@ -31,7 +31,7 @@
           </div>
         <%end%>
         <p><%= @post.set_date %></p>
-        <% if current_user?(@user) %>
+        <% if current_user?(@post.user) %>
           <%= link_to post_path(@post), method: :delete, data: { confirm: '削除しますか？' } do %>
             <%= icon 'fas', 'trash' %>
           <% end %>
