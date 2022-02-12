@@ -38,6 +38,9 @@ ja:
       oven_used: '使用オーブン'
       url: 'ホームページ'
       share: '共有する'
+  post:
+    new:
+      post: '投稿する'
   static_pages:
     privacy:
       title: 'プライバシーポリシー'

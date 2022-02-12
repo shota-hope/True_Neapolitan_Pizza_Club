@@ -387,6 +387,7 @@ DEPENDENCIES
   jbuilder (~> 2.7)
   listen (~> 3.3)
   meta-tags
+  mini_magick
   pg (~> 1.1)
   pry-byebug
   pry-rails
