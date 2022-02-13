@@ -12,15 +12,11 @@ class ImageUploader < CarrierWave::Uploader::Base
     "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   end
 
-  def default_url
-    'logo.png'
-  end
-
   def extension_whitelist
     %w(jpg jpeg png)
   end
 
   def size_range
-    0..5.megabytes
+    0..8.megabytes
   end
 end
