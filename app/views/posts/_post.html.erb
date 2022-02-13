@@ -10,7 +10,7 @@
         </div>
       <p class='mt-4 ml-3 font-weight-bold'><%= post.title %></p>
 
-      <p class='ml-3'><%= post.body %></p>
+      <p class='ml-3 text-jsutify'><%= simple_format(h(post.body)) %></p>
       <% post.image.each do |image| %>
         <%= image_tag image.url, class: 'rounded m-1', size: '250x200' %>
       <%end%>

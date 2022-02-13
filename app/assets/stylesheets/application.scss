@@ -71,7 +71,15 @@ header {
 }
 
 .wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 94vh;
   overflow: hidden;
+}
+
+#contents {
+  flex: 1;
 }
 
 a.header-font {
@@ -80,13 +88,13 @@ a.header-font {
   font-weight: bold;
 }
 
-.form-height {
-  padding-bottom: 120px;
-}
+// .form-height {
+//   padding-bottom: 120px;
+// }
 
-.login-height {
-  padding-bottom: 250px;
-}
+// .login-height {
+//   padding-bottom: 250px;
+// }
 
 .alert.alert-success {
   margin-bottom: 0;
