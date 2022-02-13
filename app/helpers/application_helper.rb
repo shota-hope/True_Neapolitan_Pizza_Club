@@ -11,7 +11,7 @@ module ApplicationHelper
       noindex: !Rails.env.production?,
       icon: [
         { href: image_url('favicon.png') },
-        { href: image_url('logo.png'), rel: 'apple-touch-icon', sizes: '180x180',
+        { href: image_url('ogp.png'), rel: 'apple-touch-icon', sizes: '180x180',
           type: 'image/jpg' }
       ],
       og: {
@@ -20,13 +20,13 @@ module ApplicationHelper
         description: '真のナポリピッツァ部は、「真のナポリピッツァ協会」認定店のみを簡単に探せるWebサービス。お店を探してナポリピッツァを食べに行こう。',
         type: 'website',
         url: request.original_url,
-        image: image_url('logo.png'),
+        image: image_url('ogp.png'),
         locale: 'ja_JP'
       },
       twitter: {
         card: 'summary_large_image',
         site: '@ohno_hope3',
-        image: image_url('logo.png')
+        image: image_url('ogp.png')
       }
     }
   end
@@ -35,5 +35,4 @@ module ApplicationHelper
   def current_user?(user)
     user && user == current_user
   end
-  
 end

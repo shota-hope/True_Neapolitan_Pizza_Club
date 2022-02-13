@@ -1,0 +1,107 @@
+#body {
+  background-color: #F3F3F3;
+  padding-top: 76px;
+}
+
+// レスポンシブ対応
+@media (max-width: 768px) {
+  header {
+    .nav-menu {
+      font-size: 0.7rem;
+    }
+  }
+
+  .top-text {
+    h1 {
+      font-size: 1.4rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+    }
+
+    h4 {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+header {
+  position: fixed;
+  height: 76px;
+  width: 100%;
+  z-index: 999;
+  /*最前面へ*/
+  top: 0;
+  left: 0;
+  background-color: rgba(52, 58, 64, 0.9);
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: right;
+  }
+}
+
+@media screen and (max-width:768px) {
+
+  .collapsing,
+  .collapse.show {
+    position: absolute;
+    right: 15px;
+    top: 55px;
+    padding: 0 10px 5px 6px;
+    border-radius: 10px;
+    background-color: #343A3F;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    opacity: 0.8;
+  }
+
+  .navbar-toggler .navbar-toggler-icon {
+    border-color: rgba(0, 0, 0, 0);
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+}
+
+.collapsing {
+  display: none;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 94vh;
+  overflow: hidden;
+}
+
+#contents {
+  flex: 1;
+}
+
+a.header-font {
+  font-family: 'Noto Sans JP',
+    sans-serif;
+  font-weight: bold;
+}
+
+// .form-height {
+//   padding-bottom: 120px;
+// }
+
+// .login-height {
+//   padding-bottom: 250px;
+// }
+
+.alert.alert-success {
+  margin-bottom: 0;
+}
+
+.bg-white {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+}

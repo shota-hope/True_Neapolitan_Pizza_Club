@@ -7,7 +7,7 @@
     <div class="mb-3 w-100">
       <div class='bg-white rounded mb-3 p-3'>
         <div class='float-right'>
-          <%= link_to "https://twitter.com/share?url=#{request.url}&text=#{@post.user.name}さんの口コミ投稿を見よう！!%0a真のナポリピッツァ協会認定店%20「#{@post.shop.name}」%0a&hashtags=真のナポリピッツァ部,真のナポリピッツァ協会 ", title: 'Twitter', target: '_blank', class: 'btn btn-outline-primary rounded-pill mt-2 mb-5' do %>
+          <%= link_to "https://twitter.com/share?url=#{request.url}&text=#{@post.user.name}さんが口コミ投稿をしてくれました!%0a真のナポリピッツァ協会認定店%20「#{@post.shop.name}」%0a&hashtags=真のナポリピッツァ部,真のナポリピッツァ協会 ", title: 'Twitter', target: '_blank', class: 'btn btn-outline-primary rounded-pill mt-2 mb-5' do %>
             <i class="fab fa-twitter"></i>
             <span><%= (t 'shops.show.share') %></span>
           <% end %>
@@ -19,7 +19,7 @@
         </div>
         <% end %>
         <p class='font-weight-bold mt-4 ml-3'><%= @post.title %></p>
-        <p class='ml-3'><%= @post.body %></p>
+        <p class='ml-3'><%= simple_format(h(@post.body)) %></p>
         <% @post.image.each do |image| %>
           <%= image_tag image.url, class: 'rounded m-1 img-fluid', data: { toggle: 'modal', target: "#image-modal#{@post.shop_id += 1}" }, size: '230x180', 'data-turbolinks': false, style: "cursor:pointer" %>
           <div class="modal fade" id="image-modal<%= @post.shop_id%>">

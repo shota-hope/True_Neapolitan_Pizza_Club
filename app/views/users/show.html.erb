@@ -12,13 +12,10 @@
       </div>
       <div class='col-12 col-sm-7 col-md-9 pt-3 mb-3 bg-white rounded'>
         <p class='font-weight-bold mb-0'>プロフィール</p><br>
-        <p class ='text-jsutify text-left'><%= @user.profile %></p>
+        <p class ='text-jsutify text-left'><%= simple_format(h(@user.profile)) %></p>
       </div>
     </div>
-
     <h4 class='my-3'>投稿一覧</h4>
-    <div class='w-100'>
-      <%= render 'posts/post' %>
-    </div>
+    <%= render 'posts/post' %>
   </div>
 </div>
