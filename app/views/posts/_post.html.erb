@@ -15,7 +15,7 @@
         <%= image_tag image.url, class: 'rounded m-1', size: '250x200' %>
       <%end%>
       <div>
-        <%= link_to 'すべて表示', post_path(post), class: 'ml-1' , 'data-turbolinks': false %>
+        <%= link_to '詳細表示', post_path(post), class: 'ml-1' , 'data-turbolinks': false %>
         <p class='mb-0 mt-3'><%= post.set_date %></p>
       </div>
     </div>

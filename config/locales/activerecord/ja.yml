@@ -13,5 +13,4 @@ ja:
       post:
         title: 'タイトル'
         body: '本文'
-        image: '画像'
-  
+        image: '画像(4枚まで)'
