@@ -1,6 +1,6 @@
 class AvatarUploader < CarrierWave::Uploader::Base
   include CarrierWave::MiniMagick
-  process resize_to_fit: [200, 200, 'Center']
+  process resize_to_fill: [200, 200, "Center"]
   # 保存先を本番環境のみS3に変更
   if Rails.env.production?
     storage :fog # 本番環境のみ
@@ -21,6 +21,6 @@ class AvatarUploader < CarrierWave::Uploader::Base
   end
 
   def size_range
-    0..5.megabytes
+    0..7.megabytes
   end
 end
