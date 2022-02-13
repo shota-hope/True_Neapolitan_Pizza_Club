@@ -594,7 +594,7 @@ Shop.seed(:id,
     url: 'https://www.instagram.com/da.compagno/',
     latitude: '34.67595787515656', longitude: '136.50383440788895' },
 
-  { id:49, name: 'アンティカ ピッツェリア ラジネッロ （Antica Pizzeria L`ASINELLO） ',
+  { id:49, name: 'アンティカ ピッツェリア ラジネッロ （Antica Pizzeria LASINELLO） ',
     tel_number: '050-5890-4678',
     address: '京都府宇治市宇治妙楽41 大阪屋マーケット',
     access: 'JR宇治から徒歩6分 京阪宇治から徒歩7分',
