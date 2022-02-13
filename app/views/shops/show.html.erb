@@ -3,7 +3,7 @@
     <h3 class=" mb-2 mt-2 font-weight-bold"><%= @shop.name %></h3>
       <!--twitterシェア-->
     <div class='ml-3'>
-      <%= link_to "https://twitter.com/share?url=#{request.url}/&text=#{@shop.name}%0aお気に入りののナポリピッツァ協会認定店を共有しよう。%0a&hashtags=真のナポリピッツァ部,真のナポリピッツァ協会 ", title: 'Twitter', target: '_blank', class: 'btn btn-outline-primary rounded-pill mt-2 mb-5' do %>
+      <%= link_to "https://twitter.com/share?url=#{request.url}/&text=#{@shop.name}%0aお気に入りのナポリピッツァ協会認定店を共有しよう。%0a&hashtags=真のナポリピッツァ部,真のナポリピッツァ協会 ", title: 'Twitter', target: '_blank', class: 'btn btn-outline-primary rounded-pill mt-2 mb-5' do %>
         <i class="fab fa-twitter"></i>
         <span><%= (t 'shops.show.share') %></span>
       <% end %>
