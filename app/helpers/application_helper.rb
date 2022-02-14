@@ -11,7 +11,7 @@ module ApplicationHelper
       noindex: !Rails.env.production?,
       icon: [
         { href: image_url('favicon.png') },
-        { href: image_url('ogp.png'), rel: 'apple-touch-icon', sizes: '180x180',
+        { href: image_url('icon.png'), rel: 'apple-touch-icon', sizes: '180x180',
           type: 'image/jpg' }
       ],
       og: {
