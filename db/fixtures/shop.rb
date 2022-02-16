@@ -1050,5 +1050,16 @@ Shop.seed(:id,
     member_since: '2021/10/18',
     pizza_maker: '', oven_used: '',
     url: 'https://www.instagram.com/la_ginestra_pizzeria/',
-    latitude: '36.4678005', longitude: '140.5556394' }
+    latitude: '36.4678005', longitude: '140.5556394' },
+  { id:86, name: 'ナポリ',
+    tel_number: '053-473-6474',
+    address: '静岡県浜松市中区富塚町2920-33',
+    access: '高塚駅から4,188m',
+    open: '11:30～14:00  17:30～21:15(L.O.20:15)',
+    close: '木曜日（月1回連休あり）',
+    member_number: '725',
+    member_since: '2018/6/27',
+    pizza_maker: '', oven_used: '',
+    url: 'http://hamamatsu-napoli.com/',
+    latitude: '34.7274046', longitude: '137.6905231' }
 )
