@@ -17,7 +17,7 @@ class PostsController < ApplicationController
     else
       @shop = Shop.find(params[:shop_id])
       flash.now['danger'] = '投稿に失敗しました'
-      render :new # 更新するとルーティングエラーが出るバグあり
+      render :new
     end
   end
 
