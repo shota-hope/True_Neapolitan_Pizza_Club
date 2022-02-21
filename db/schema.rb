@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_02_10_020245) do
+ActiveRecord::Schema.define(version: 2022_02_21_142731) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -68,8 +68,20 @@ ActiveRecord::Schema.define(version: 2022_02_10_020245) do
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 
+  create_table "visits", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "shop_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["shop_id"], name: "index_visits_on_shop_id"
+    t.index ["user_id", "shop_id"], name: "index_visits_on_user_id_and_shop_id", unique: true
+    t.index ["user_id"], name: "index_visits_on_user_id"
+  end
+
   add_foreign_key "posts", "shops"
   add_foreign_key "posts", "users"
   add_foreign_key "prefectures", "shops"
   add_foreign_key "shops", "prefectures"
+  add_foreign_key "visits", "shops"
+  add_foreign_key "visits", "users"
 end
