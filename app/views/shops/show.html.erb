@@ -7,7 +7,11 @@
         <i class="fab fa-twitter"></i>
         <span><%= (t 'shops.show.share') %></span>
       <% end %>
-
+      <%if logged_in? %>
+        <%= render 'visit_button', shop: @shop %>
+      <% else %>
+        <%= render 'visit', { shop: @shop } %>
+      <% end %>
       <%= link_to '投稿する', new_shop_post_path(@shop), class: 'btn btn-warning rounded-pill float-right ml-3 mt-2' %>
     </div>
 

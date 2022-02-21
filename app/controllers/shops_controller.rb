@@ -11,6 +11,10 @@ class ShopsController < ApplicationController
     @posts = @shop.posts.order(created_at: :desc)
   end
 
+  def visits
+    @visited_shops = current_user.visited_shops.includes(:user).order(created_at: :desc)
+  end
+
   private
 
   def set_params_for_google_map
