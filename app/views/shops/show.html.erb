@@ -1,12 +1,14 @@
 <div class="container pt-3">
   <div class="row">
-    <h3 class=" mb-2 mt-2 font-weight-bold"><%= @shop.name %></h3>
+    <h3 class=" mb-2 mt-2 text-justify"><%= @shop.name %></h3>
       <!--twitterシェア-->
     <div class='ml-3'>
       <%= link_to "https://twitter.com/share?url=#{request.url}/&text=#{@shop.name}%0aお気に入りのナポリピッツァ協会認定店を共有しよう。%0a&hashtags=真のナポリピッツァ部,真のナポリピッツァ協会 ", title: 'Twitter', target: '_blank', class: 'btn btn-outline-primary rounded-pill mt-2 mb-5' do %>
         <i class="fab fa-twitter"></i>
         <span><%= (t 'shops.show.share') %></span>
       <% end %>
+
+      <%= link_to '投稿する', new_shop_post_path(@shop), class: 'btn btn-warning rounded-pill float-right ml-3 mt-2' %>
     </div>
 
     <div class='table-responsive justify-content-center'>
@@ -50,22 +52,20 @@
           </tr>
           <tr>
             <th ><%= (t 'shops.show.url') %></th>
-            <td><%= link_to @shop.url,@shop.url %></td>
+            <td><%= link_to @shop.url,@shop.url, class: 'text-white' %></td>
           </tr>
         </tbody>
       </table>
     </div>
     <div id='map' class='mb-4 '></div>
-    <div class='w-100'>
-      <%= link_to '投稿する', new_shop_post_path(@shop), class: 'btn btn-warning btn-lg rounded-pill float-right' %>
-      <p class='font-weight-bold ml-3 pb-3'>部員口コミ</p>
+    <div class='w-100 mb-3 row'>
+      <p class='font-weight-bold ml-3 col'>部員口コミ</p>
+      <%= link_to '投稿する', new_shop_post_path(@shop), class: 'btn btn-warning rounded-pill' %>
+    </div>
     <% if @posts.blank? %>
       <p>まだ口コミ投稿がありません</p>
     <% else %>
-      <div>
         <%= render 'posts/post' %>
-      </div>
     <% end %>
-    </div>
   </div>
 </div>

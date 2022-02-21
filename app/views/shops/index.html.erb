@@ -1,31 +1,29 @@
 <div class="container pt-3">
   <div class="row">
-    <h2 class="mb-5"><%= (t 'shops.index.title') %></h2>
-    <div>
+    <div class='col py-3'>
       <%= render 'shared/search_form', url: shops_path %>
     </div>
-
-      <div class='table-responsive'>
-        <table class="table table-striped table-dark table-hover">
-          <thead>
-            <tr>
-              <th scope="col"><%= (t 'shops.index.name') %></th>
-              <th scope="col"><%= (t 'shops.index.address') %></th>
-            </tr>
-          </thead>
-          <tbody>
-          <% if @shops.present? %>
-          <% @shops.each do |shop| %>
-            <tr>
-              <td scope="row"><%= link_to shop.name, shop_path(shop), 'data-turbolinks': false %></td>
-              <td><%= shop.address %></td>
-            </tr>
-            <% end %>
-          <% else %>
-            <h3><%= (t 'shops.index.search_result') %></h3>
+    <div class='table-responsive'>
+      <table class="table table-striped table-dark table-hover">
+        <thead>
+          <tr>
+            <th scope="col"><%= (t 'shops.index.name') %></th>
+            <th scope="col"><%= (t 'shops.index.address') %></th>
+          </tr>
+        </thead>
+        <tbody>
+        <% if @shops.present? %>
+        <% @shops.each do |shop| %>
+          <tr>
+            <td scope="row"><%= link_to shop.name, shop_path(shop), 'data-turbolinks': false, class: 'text-white' %></td>
+            <td><%= shop.address %></td>
+          </tr>
           <% end %>
-          </tbody>
-        </table>
-      </div>
+        <% else %>
+          <h3><%= (t 'shops.index.search_result') %></h3>
+        <% end %>
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>
