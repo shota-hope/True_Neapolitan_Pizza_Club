@@ -1,1 +1,3 @@
-<%= link_to '訪問済み！', shop_visit_path(@shop), method: :delete %>
+<%= link_to shop_visit_path(@shop), method: :delete, data: {confirm: "行った！を取り消しますか？"} do %>
+   <button class='btn btn-dark rounded-pill'>訪問済み！</button>
+<% end %>
