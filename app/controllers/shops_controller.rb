@@ -15,7 +15,7 @@ class ShopsController < ApplicationController
   end
 
   def visits
-    @visited_shops = current_user.visited_shops.includes(:user).order(created_at: :desc)
+    @visited_shops = current_user.visited_shops.order(created_at: :desc)
   end
 
   private

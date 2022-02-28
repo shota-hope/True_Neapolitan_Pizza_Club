@@ -1,0 +1,27 @@
+<div class="container pt-3">
+  <div class="row">
+    <p class='font-weight-bold'><%= '訪問済み店舗'%></p>
+    <div class='table-responsive'>
+      <% if @visited_shops.present? %>
+      <table class="table table-striped table-dark table-hover">
+        <thead>
+          <tr>
+            <th scope="col"><%= (t 'shops.index.name') %></th>
+            <th scope="col"><%= (t 'shops.index.address') %></th>
+          </tr>
+        </thead>
+        <tbody>
+        <% @visited_shops.each do |visited_shop| %>
+          <tr>
+            <td scope="row"><%= link_to visited_shop.name, shop_path(visited_shop), 'data-turbolinks': false, class: 'text-white' %></td>
+            <td><%= visited_shop.address %></td>
+          </tr>
+          <% end %>
+        <% else %>
+          <h3>訪問済みの店舗はありません</h3>
+        <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

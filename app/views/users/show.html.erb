@@ -9,6 +9,9 @@
       <div class='col-12 col-sm-5 col-md-3 mb-3 bg-white text-center rounded'>
         <%= image_tag @user.avatar.url, class: 'rounded-circle mt-2 ml-1',size: '130x130' %>
         <p class='text-center font-weight-bold pt-2'><%= @user.name %></p>
+      <% if current_user?(@user) %>
+        <p><%= link_to '訪問済店舗を確認', visits_shops_path,'data-turbolinks': false, class: 'text-dark'%></p>
+      <% end %>
       </div>
       <div class='col-12 col-sm-7 col-md-9 pt-3 mb-3 bg-white rounded'>
         <p class='font-weight-bold mb-0'>プロフィール</p><br>
