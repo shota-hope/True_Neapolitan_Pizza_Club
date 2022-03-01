@@ -1,4 +1,14 @@
 ja:
+  enums:
+    user:
+      status:
+        begginer: '新入部員'
+        normal: '一般部員'
+        regular: 'レギュラー部員'
+        ace: 'エース部員'
+        sub_leader: '副部長'
+        leader: '部長'
+        coach: '監督'
   activerecord:
     models:
       user: 'ユーザー'
@@ -13,4 +23,4 @@ ja:
       post:
         title: 'タイトル'
         body: '本文'
-        image: '画像(4枚まで)'
+        image: '画像(最大4枚)'

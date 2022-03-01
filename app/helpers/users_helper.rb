@@ -17,6 +17,6 @@ module UsersHelper
     else
         user.status = 6
     end
-    user.status
+    user.status_i18n
   end
 end
