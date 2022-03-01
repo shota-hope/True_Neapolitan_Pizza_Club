@@ -14,6 +14,8 @@ class User < ApplicationRecord
   validates :name, presence: true, length: { maximum: 255 }
   validates :profile, length: { maximum: 3000 }
 
+  enum status: { begginer: 0, normal: 1, regular: 2, ace: 3, sub_leader: 4, leader: 5, coach: 6 }
+
   def visit(shop)
     visited_shops << shop
   end
