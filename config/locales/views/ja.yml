@@ -37,7 +37,7 @@ ja:
       pizza_maker: 'ピッツァイオーロ'
       oven_used: '使用オーブン'
       url: 'ホームページ'
-      share: '共有する'
+      share: '共有'
   post:
     new:
       post: '投稿する'

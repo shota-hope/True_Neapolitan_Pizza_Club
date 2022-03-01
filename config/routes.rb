@@ -11,5 +11,7 @@ Rails.application.routes.draw do
   resources :prefectures, only: %i[index show]
   resources :shops, only: %i[index show] do
     resources :posts, only: %i[new create show destroy], shallow: true
+    get 'visits', on: :collection
+    resource :visit, only: %i[create destroy]
   end
 end

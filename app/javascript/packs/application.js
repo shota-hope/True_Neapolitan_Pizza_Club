@@ -10,6 +10,8 @@ import "bootstrap"
 import "bootstrap/scss/bootstrap.scss"
 import "prefecture/index"
 import "js/preview"
+import "js/visits"
+import "jquery"
 
 Rails.start()
 Turbolinks.start()

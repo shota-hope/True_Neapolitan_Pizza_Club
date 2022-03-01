@@ -28,6 +28,7 @@ gem 'aws-sdk'
 gem 'bootsnap', '>= 1.4.4', require: false
 gem 'carrierwave'
 gem 'dotenv-rails'
+gem 'enum_help'
 gem 'fog-aws'
 gem 'gon'
 gem 'rails-i18n'

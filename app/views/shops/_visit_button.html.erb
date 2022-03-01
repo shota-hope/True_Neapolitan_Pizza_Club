@@ -1,0 +1,5 @@
+<% if current_user.visit?(@shop) %>
+  <%= render 'unvisit', { shop: @shop } %>
+<% else %>
+  <%= render 'visit', { shop: @shop } %>
+<% end %>

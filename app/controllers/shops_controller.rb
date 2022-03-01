@@ -8,7 +8,14 @@ class ShopsController < ApplicationController
 
   def show
     @shop = Shop.find(params[:id])
+    gon.shop_lat = @shop.latitude
+    gon.shop_lng = @shop.longitude
+    gon.shop_id = @shop.id
     @posts = @shop.posts.order(created_at: :desc)
+  end
+
+  def visits
+    @visited_shops = current_user.visited_shops.order(created_at: :desc)
   end
 
   private
