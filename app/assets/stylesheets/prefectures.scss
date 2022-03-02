@@ -7,7 +7,7 @@
   background-position: center;
 
    @media screen and (max-width: 767px) {
-      height: calc(78vh);
+      height: calc(64vh);
     }
 
 
@@ -19,6 +19,7 @@
     width: 100%;
     text-align: right;
     font-size: 3rem;
+    font-weight: bold;
     color: white;
 
     @media screen and (max-width: 540px) {
@@ -26,6 +27,7 @@
       top: 30%;
       left: 50%;
       text-align: center;
+      font-weight: bold;
     }
   }
 }
