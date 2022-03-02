@@ -11,7 +11,11 @@
         <% end %>
       </div>
       <div class="col-4 col-md-3 col-lg-2 mb-3">
+      <% if logged_in? %>
         <%= render 'visit_button', shop: @shop %>
+      <% else %>
+        <%= render 'visit', { shop: @shop } %>
+      <% end %>
       </div>
       <div class="col-4 col-md-3 col-lg-2 mb-3">
         <%= link_to '投稿する', new_shop_post_path(@shop), class: 'btn btn-warning rounded-pill', 'data-turbolinks': false %>
