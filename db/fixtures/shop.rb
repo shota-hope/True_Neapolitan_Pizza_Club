@@ -820,7 +820,7 @@ Shop.seed(:id,
     member_number: '415',
     member_since: '2012/9/17',
     pizza_maker: '', oven_used: 'GIANNI ACUNT社製',
-    url: 'https://www.pizzeria-la-gita.com/',
+    url: 'https://pizza-lagita.com/',
     latitude: '35.1233578566795', longitude: '134.1751404374582' },
 
   { id:68, name: 'イタリア食堂 Mamma（マンマ）',
