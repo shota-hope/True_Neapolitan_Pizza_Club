@@ -18,8 +18,8 @@ RSpec.describe User, type: :model do
     user.valid?
     expect(user.errors[:name]).to include("を入力してください")
   end
-  # メールアドレスがなければ無効な状態であること
-  it "is invalid without an email address" do
+  # 重複したメールアドレスなら無効な状態であること
+  it "is invalid with a duplicate email address" do
     User.create(
       name: "ohno",
       email: "ohno23@example.com",
@@ -35,9 +35,4 @@ RSpec.describe User, type: :model do
     user.valid?
     expect(user.errors[:email]).to include("はすでに存在します")
   end
-
-  # 重複したメールアドレスなら無効な状態であること
-  # it "is invalid with a duplicate email address"
-  # パスワードがなければ無効な状態であること
-  # it "is invalid without a password"
 end
