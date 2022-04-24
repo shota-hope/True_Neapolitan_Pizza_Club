@@ -14,4 +14,7 @@ SitemapGenerator::Sitemap.create do
   Shop.find_each do |shop|
     add shop_path(shop)
   end
+  Post.find_each do |post|
+    add post_path(post)
+  end
 end
