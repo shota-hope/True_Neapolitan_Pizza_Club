@@ -1,16 +1,19 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  describe "verification of validation" do
-    # なまえ、メール、パスワードがあれば有効な状態であること
-    it "is valid with a name, email, password, password_confirmation" do
-      user = User.new(
+  before do
+    @user = User.create(
         name: "ohno",
         email: "ohno23@example.com",
         password: "ohnoohno",
         password_confirmation: "ohnoohno"
         )
-      expect(user).to be_valid
+  end
+  
+  describe "verification of validation" do
+    # なまえ、メール、パスワードがあれば有効な状態であること
+    it "is valid with a name, email, password, password_confirmation" do
+      expect(@user).to be_valid
     end
 
     # 名がなければ無効な状態であること
@@ -21,12 +24,6 @@ RSpec.describe User, type: :model do
     end
     # 重複したメールアドレスなら無効な状態であること
     it "is invalid with a duplicate email address" do
-      User.create(
-        name: "ohno",
-        email: "ohno23@example.com",
-        password: "ohnoohno",
-        password_confirmation: "ohnoohno"
-        )
       user = User.new(
         name: "oono",
         email: "ohno23@example.com",
