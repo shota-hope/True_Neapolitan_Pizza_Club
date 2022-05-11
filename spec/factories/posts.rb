@@ -1,8 +1,8 @@
 FactoryBot.define do
   factory :post do
-    title { "MyString" }
-    body { "MyText" }
-    image { "MyString" }
-    user { nil }
+    title { "ピザ食べました" }
+    body { "おいしかったです。" }
+    image { nil }
+    association :user
   end
 end
