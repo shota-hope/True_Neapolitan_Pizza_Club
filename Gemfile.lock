@@ -1385,6 +1385,8 @@ GEM
     jmespath (1.5.0)
     json (2.6.1)
     jwt (2.3.0)
+    launchy (2.5.0)
+      addressable (~> 2.7)
     listen (3.7.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -1613,6 +1615,7 @@ DEPENDENCIES
   font-awesome-sass
   gon
   jbuilder (~> 2.7)
+  launchy
   listen (~> 3.3)
   meta-tags
   mini_magick
