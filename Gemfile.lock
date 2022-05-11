@@ -1302,6 +1302,7 @@ GEM
       marcel (~> 1.0.0)
       mini_mime (>= 0.1.3)
       ssrf_filter (~> 1.0)
+    childprocess (4.1.0)
     chronic (0.10.2)
     code_analyzer (0.5.2)
       sexp_processor
@@ -1539,6 +1540,7 @@ GEM
     ruby-vips (2.1.4)
       ffi (~> 1.12)
     ruby2_keywords (0.0.5)
+    rubyzip (2.3.2)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
     sassc (2.4.0)
@@ -1552,6 +1554,10 @@ GEM
     seed-fu (2.3.9)
       activerecord (>= 3.1)
       activesupport (>= 3.1)
+    selenium-webdriver (4.1.0)
+      childprocess (>= 0.5, < 5.0)
+      rexml (~> 3.2, >= 3.2.5)
+      rubyzip (>= 1.2.2)
     semantic_range (3.0.0)
     sexp_processor (4.16.0)
     sitemap_generator (6.2.1)
@@ -1582,6 +1588,10 @@ GEM
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
+    webdrivers (5.0.0)
+      nokogiri (~> 1.6)
+      rubyzip (>= 1.3.0)
+      selenium-webdriver (~> 4.0)
     webpacker (5.4.3)
       activesupport (>= 5.2)
       rack-proxy (>= 0.6.1)
@@ -1636,12 +1646,14 @@ DEPENDENCIES
   rubocop-rspec
   sass-rails (>= 6)
   seed-fu
+  selenium-webdriver
   sitemap_generator
   sorcery
   spring
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 4.1.0)
+  webdrivers
   webpacker (~> 5.0)
   whenever
 
