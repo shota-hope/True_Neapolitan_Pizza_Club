@@ -4,5 +4,6 @@ FactoryBot.define do
     body { "おいしかったです。" }
     image { nil }
     association :user
+    association :shop
   end
 end
