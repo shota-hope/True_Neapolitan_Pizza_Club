@@ -18,6 +18,7 @@
       <div class='text-center login-height my-4'>
         <%= link_to (t '.to_register_page'), new_user_path, class: 'my-4' %>
       </div>
+        <%= link_to 'Login with Twitter', auth_at_provider_path(provider: :twitter) %>
     </div>
   </div>
 </div>

@@ -1,2 +1,2 @@
 sorcery:
-  callback_url: "https://www.napolipizza-club.com//oauth/callback?provider=twitter"
+  callback_url: "https://www.napolipizza-club.com//oauth/callback"
