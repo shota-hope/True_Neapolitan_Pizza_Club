@@ -117,7 +117,7 @@ Rails.application.config.sorcery.configure do |config|
   #
   config.twitter.key = ""
   config.twitter.secret = ""
-  config.twitter.callback_url = "http://0.0.0.0:3000/oauth/callback?provider=twitter"
+  config.twitter.callback_url = "http://localhost:3000/oauth/callback?provider=twitter"
   config.twitter.user_info_mapping = {:name => "screen_name", profile: 'description', avatar: 'profile_image_url_https'}
   #
   # config.facebook.key = ""

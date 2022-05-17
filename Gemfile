@@ -42,6 +42,7 @@ gem 'seed-fu'
 gem 'sitemap_generator'
 gem 'sorcery'
 gem 'whenever'
+gem 'config'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
