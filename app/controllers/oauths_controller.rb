@@ -6,11 +6,13 @@ class OauthsController < ApplicationController
   def callback
     provider = auth_params[:provider]
     if auth_params[:denied].present?
-      redirect_to root_path, notice: 'ログインをキャンセルしました'
+      redirect_to root_path, success: 'ログインをキャンセルしました'
       return
     end
     create_user_from(provider) unless (@user = login_from(provider))
-    redirect_to root_path, notice: "#{provider.titleize}でログインしました"
+    redirect_to root_path, success: "#{provider.titleize}でログインしました"
+    rescue StandardError
+      redirect_to root_path, danger: "#{provider.titleize}でのログインに失敗しました"
   end
 
   private
