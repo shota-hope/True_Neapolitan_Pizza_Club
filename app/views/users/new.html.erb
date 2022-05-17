@@ -22,6 +22,12 @@
         </div>
         <%= f.submit (t 'defaults.register'), class: 'btn btn-dark' %>
       <% end %>
+      <div class="mt-4">
+        <%= link_to auth_at_provider_path(provider: :twitter), class: 'btn btn-primary' do %>
+          <i class="fab fa-twitter"></i>
+          <span>Twitterアカウントで登録</span>
+        <% end %>
+      </div>
       <div class='text-center my-2'>
         <%= link_to (t '.to_login_page'), login_path %>
       </div>
