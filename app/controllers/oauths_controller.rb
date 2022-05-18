@@ -11,8 +11,6 @@ class OauthsController < ApplicationController
     end
     create_user_from(provider) unless (@user = login_from(provider))
     redirect_to root_path, success: "#{provider.titleize}でログインしました"
-    rescue StandardError
-      redirect_to root_path, danger: "#{provider.titleize}でのログインに失敗しました"
   end
 
   private
