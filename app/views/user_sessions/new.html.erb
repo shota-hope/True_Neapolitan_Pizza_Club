@@ -15,6 +15,12 @@
           <%= f.submit (t 'defaults.login'), class: 'btn btn-dark' %>
         </div>
       <% end %>
+      <div class="mt-3">
+        <%= link_to auth_at_provider_path(provider: :twitter), class: 'btn btn-primary' do %>
+          <i class="fab fa-twitter"></i>
+          <span>Twitterアカウントログイン</span>
+        <% end %>
+      </div>
       <div class='text-center login-height my-4'>
         <%= link_to (t '.to_register_page'), new_user_path, class: 'my-4' %>
       </div>

@@ -10,10 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_02_28_153450) do
+ActiveRecord::Schema.define(version: 2022_05_17_010007) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "authentications", force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.string "provider", null: false
+    t.string "uid", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["provider", "uid"], name: "index_authentications_on_provider_and_uid"
+    t.index ["user_id"], name: "index_authentications_on_user_id"
+  end
 
   create_table "posts", force: :cascade do |t|
     t.string "title"
@@ -74,9 +84,21 @@ ActiveRecord::Schema.define(version: 2022_02_28_153450) do
     t.bigint "shop_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.float "current_lat"
+    t.float "current_lng"
     t.index ["shop_id"], name: "index_visits_on_shop_id"
     t.index ["user_id", "shop_id"], name: "index_visits_on_user_id_and_shop_id", unique: true
     t.index ["user_id"], name: "index_visits_on_user_id"
+  end
+
+  create_table "went_to_shops", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "shop_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["shop_id"], name: "index_went_to_shops_on_shop_id"
+    t.index ["user_id", "shop_id"], name: "index_went_to_shops_on_user_id_and_shop_id", unique: true
+    t.index ["user_id"], name: "index_went_to_shops_on_user_id"
   end
 
   add_foreign_key "posts", "shops"
@@ -85,4 +107,6 @@ ActiveRecord::Schema.define(version: 2022_02_28_153450) do
   add_foreign_key "shops", "prefectures"
   add_foreign_key "visits", "shops"
   add_foreign_key "visits", "users"
+  add_foreign_key "went_to_shops", "shops"
+  add_foreign_key "went_to_shops", "users"
 end
