@@ -2,15 +2,11 @@
 ### https://www.napolipizza-club.com/
 
 ## サービス概要
-**真のナポリピッツァ協会 認定店にナポリピッツァを食べに行こう**
-<br />
+**『真のナポリピッツァ協会 認定店にナポリピッツァを食べに行こう』**
 真のナポリピッツァ部は、全国に約90店舗ある「真のナポリピッツァ協会」認定店を簡単に探せるサービスです。
 <br />
-<br />
-[以前のREADME](https://github.com/shota-hope/True_Neapolitan_Pizza_Club/blob/main/README_old.md)
-
 ### サービスを作った思い
-真のナポリピッツァ協会認定店に行きたい時に、公式ページの認定店一覧やグルメアプリだと探しづらいと常々感じていました。
+『真のナポリピッツァ協会認定店』に行きたい時に、公式ページの認定店一覧やグルメアプリだと探しづらいと常々感じていました。
 旅行先や出張先で後から確認すると認定店が近くにあったにも関わらず見逃してしまっていることもありました。<br />
 また、個人的に感動する程おいしい伝統料理「ナポリピッツァ」に興味を持ってくれる人を増やしたいという思い、
 そしてナポリピッツァ業界の発展、活性化をさせ、**もっと身近に気軽にナポリピッツァを食べに行ける未来**を目指して本サービスを開発しました。
@@ -36,40 +32,46 @@
 ## 使用技術
 **フロントエンド**
 - Bootstrap
-- jQuery
+- JavaScript
+  - jQuery
 
 **バックエンド**
 - Ruby 3.0.2
 - Rails 6.1.4
+  - 以下主要gem
+  - sorcery(ログイン、SNS認証)
+  - seed-fu(データの入力)
+  - carrierwave(ファイルのアップロード)
+  - rubocop(Lintツール)
+  - fog-aws(ファイルをS3へアップロード)
+  - meta-tags(OGP設定)
+  - config(定数管理)
 - Maps JavaScript API
 
 **インフラ**
 - heroku
+- PostgreSQL
 - AWS(S3)
 ### 機能一覧
 - 認定店一覧
 - 認定店詳細
 - 検索機能(都道府県別セレクトボックス。地名、店名フリーワード検索)
-- Maps JavaScript APIを使用しマップを埋め込み、認定店のマーカーを立てる(クリックすると吹き出しでリンク表示)
-- Twitter共有
+- GoogleMap上に認定店のマーカー表示(Maps JavaScript API)
 - ログイン機能
+- Twitter認証ログイン
 - 投稿機能
 - 投稿詳細
-- ユーザー詳細
-- ユーザー編集
-- 行った！機能(Geolocation APIを使用し現在地を取得しているため、実際に店舗の近くにいないと押すことができない)
-- 行った店舗数によって昇級
-- 行った店舗一覧
-
-**ログイン後できること**
-
-- 投稿機能(コメント、画像)
 - ユーザー機能
-- 行った！機能
+- 行った！機能(Geolocation APIを使用し、実際に店舗の近くにいないと押すことができない)
+- 訪問店舗数によって昇級
+- 訪問店舗一覧
+
 ## 画面遷移図
 https://www.figma.com/file/Snb588ncBlxNxz972EKvSH/%E7%9C%9F%E3%81%AE%E3%83%8A%E3%83%9D%E3%83%AA%E3%83%94%E3%83%83%E3%83%84%E3%82%A1%E9%83%A8?node-id=0%3A1
 ## ER図
-https://drive.google.com/file/d/1pcZf2kliGKNZJFALmPe5Ur4QJgY-6nuG/view?usp=sharing
+![ピッツァ部 drawio](https://user-images.githubusercontent.com/74855190/169016002-d54f82ec-001f-488b-aae6-929ab60cf246.png)
+https://drive.google.com/file/d/1gReizcxrETPxOPoezHijkMaiunIlBGX0/view?usp=sharing
 
 ## その他
-[【個人開発】「真のナポリピッツァ協会」認定店をサクッと探せるWebサービスをリリースしました。](https://qiita.com/ohno_hope/items/6be015ed3c9c78406b93)
+- Qiita記事: [【個人開発】「真のナポリピッツァ協会」認定店をサクッと探せるWebサービスをリリースしました。](https://qiita.com/ohno_hope/items/6be015ed3c9c78406b93)
+- [以前のREADME](https://github.com/shota-hope/True_Neapolitan_Pizza_Club/blob/main/README_old.md)
